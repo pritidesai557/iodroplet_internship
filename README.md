@@ -1,1 +1,1 @@
-# iodroplet_internship
+# wordpress-blog
