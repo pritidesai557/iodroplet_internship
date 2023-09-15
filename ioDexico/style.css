@@ -1,0 +1,100 @@
+/*
+	Theme:dexico-theme
+	Description:blog, rent apartment
+	Author:priti
+	Version:1.1
+
+*/
+/* Footer */
+.Footer{
+    width: 100%;
+    height: 594.19px;
+    background-image: url(Footer-Pic.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer section{
+    width: 80%;
+    height: 514.19px;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.Footer section .FooterHeader{
+    width: 100%;
+    height: 87.188px;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.Footer section .FooterHeader .Heading-1{
+    width: 746.66px;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 150px;
+    color: #133b5c;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.Footer section .FooterHeader .Heading-2{
+    width: 322.53px;
+    height: auto;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 550;
+}
+
+.Footer section .FooterContent{
+    width: 100%;
+    height: 176px;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.Footer section .FooterContent .F-Content{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.Footer section .FooterContent .F-Content ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Footer section .FooterContent .F-Content ul li{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 20px;
+}
+
+.Footer section .FooterContent .F-Content ul li a{
+    text-decoration: none;
+    color: #133b5c;
+    font-weight: 500;
+}
+
+.Footer section .FooterContent .F-Content .Box-1 ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Footer section .FooterContent .F-Content .Box-2{
+    height: 100%;
+    height: 56px;
+}
+
+.Footer section .FooterCredits{
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    color: #797a7e;
+}
+

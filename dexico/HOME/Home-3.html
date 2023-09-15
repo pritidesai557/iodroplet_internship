@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Preview Header  -->
+    <div class="PreviewHeader" style="position: sticky;top: 0; z-index: 5;">
+      <div class="logo">
+        <a href="#"><i class='bx bxs-hot'></i><span>envato</span>market</a>
+      </div>
+      <div class="BuyAction">
+        <button type="button" class="btn btn-success">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Home-3-Element-1  -->
+    <div class="Home-3-Element-1">
+        <div class="Sidebar">
+            <div class="LogoName">
+                <a href="../index.html">dexico.</a>
+            </div>
+            <ul class="Tabs">
+                <li>
+                  <a href="#" onclick="toggleCollapsible(this)">
+                    <span class="links_name">Home</span>
+                    <i class='bx bx-plus'></i> 
+                  </a>
+                  <div class="collapsible-content">
+                    <a href="../HOME/Home-2.html"><span>Home 2</span></a>
+                    <a href="../HOME/Home-3.html"><span>Home 3</span></a>
+                    <a href="../HOME/Home-4.html"><span>Home 4</span></a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="toggleCollapsible(this)">
+                    <span class="links_name">Property</span>
+                    <i class='bx bx-plus'></i>
+                  </a>
+                  <div class="collapsible-content">
+                    <a href="../PROPERTY/Property-List.html"><span>Property List</span></a>
+                    <a href="../PROPERTY/Property-Details.html"><span>Property Deatils</span></a>
+                    <a href="../PROPERTY/Property-Width-Full-Details.html"><span>Property Details Full Width</span></a>
+                    <a href="../PROPERTY/Agents.html"><span>Agents</span></a>
+                    <a href="../PROPERTY/Agent-Details.html"><span>Agent Details</span></a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="toggleCollapsible(this)">
+                    <span class="links_name">About</span>
+                    <i class='bx bx-plus'></i> 
+                  </a>
+                  <div class="collapsible-content">
+                    <a href="../ABOUT/404.html"><span>404</span></a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="toggleCollapsible(this)">
+                    <span class="links_name">Blog</span>
+                    <i class='bx bx-plus'></i> 
+                  </a>
+                  <div class="collapsible-content">
+                    <a href="../BLOG/SinglePost.html"><span>Single Post</span></a>
+                  </div>
+                </li>
+                <li>
+                  <a href="../Contacts.html" onclick="toggleCollapsible(this)">
+                    <span class="links_name">Contacts</span>
+                  </a>
+                </li>
+            </ul>
+            <div class="SocialMedia" style="width: 100%;height: 40px;font-size: 35px;margin-bottom: 100px;" align="center">
+              <a href=""><i class='bx bxl-twitter' style="color: #3C6E71;margin-right: 5px;"></i></a>
+              <a href=""><i class='bx bxl-facebook' style="color: #3C6E71;margin-right: 5px;"></i></a>
+              <a href=""><i class='bx bxl-instagram' style="color: #3C6E71;"></i></a>  
+            </div>
+        </div>
+        <div class="FullSide">
+          <div class="Header"><p style="margin-bottom: 0;">Apartments</p>For Life</div>
+          <div class="SubHeader">Search over 1.1 million listings including apartments, houses, condos, and townhomes available for rent. You’ll find your next home, in any style you prefer.</div>
+          <div class="PButton">
+            <button class="btn btn-primary" type="button">− Search</button>
+          </div>
+          <div class="Box">
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room1.jpg) ;"></div>
+              </div>
+              <div class="Price">$765</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 58</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Sunny Loft</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>2 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 80 Ft²</li>
+                </ul>
+              </div>
+            </div>
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room2.jpg) ;"></div>
+              </div>
+              <div class="Price">$789</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 59</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Palace Square</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>4 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 120 Ft²</li>
+                </ul>
+              </div>
+            </div>
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room3.jpg) ;"></div>
+              </div>
+              <div class="Price">$341</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 60</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Lonsdale Palace</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>3 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 70 Ft²</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="Box">
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room1.jpg) ;"></div>
+              </div>
+              <div class="Price">$765</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 58</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Princes Place Court</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>2 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 80 Ft²</li>
+                </ul>
+              </div>
+            </div>
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room2.jpg) ;"></div>
+              </div>
+              <div class="Price">$789</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 59</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Elysian Apartments</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>4 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 120 Ft²</li>
+                </ul>
+              </div>
+            </div>
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room3.jpg) ;"></div>
+              </div>
+              <div class="Price">$341</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 60</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Eaton Road</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>3 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 70 Ft²</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="Box">
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room1.jpg) ;"></div>
+              </div>
+              <div class="Price">$765</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 58</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Traditional Apartments</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>2 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 80 Ft²</li>
+                </ul>
+              </div>
+            </div>
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room2.jpg) ;"></div>
+              </div>
+              <div class="Price">$789</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 59</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Sunny Loft</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>4 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 120 Ft²</li>
+                </ul>
+              </div>
+            </div>
+            <div class="Property">
+              <div class="PropertyContainer">
+                <div class="PropertyImage" style="background-image:url(../Room3.jpg) ;"></div>
+              </div>
+              <div class="Price">$341</div>
+              <div class="AddressLinks">
+                <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 60</a>
+              </div>
+              <a class="PropertyName">
+                <h2>Princes Place Court</h2>
+              </a>
+              <div class="PropertyFooter">
+                <ul>
+                  <li>3 Rooms</li>
+                  <li><i class='bx bxs-bed'></i> 2 Beds</li>
+                  <li><i class='bx bx-area'></i> Area 70 Ft²</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="LogoName">
+            <a href="../index.html">dexico.</a>
+        </div>
+        <div class="ContactsDetails" style="display: flex;align-items: center;margin-bottom: 30px;">
+          <h6><a href="#" style="text-decoration: none;color: rgb(65,68,75); display: flex; justify-content: center;align-items: center;margin-left: 20px;margin-right: 170px;"><i class='bx bxs-map' style="margin-right:10px;font-size: 30px;color: #3C6E71;"></i>LA, Vehiclua Street, 58</a></h6>
+          <h6><a href="#" style="text-decoration: none;color: rgb(65,68,75); display: flex; justify-content: center;align-items: center;margin-right: 170px;"><i class='bx bxs-phone' style="margin-right:10px;font-size: 30px;color: #3C6E71;"></i>+91 1234567890</a></h6>
+          <h6><a href="#" style="text-decoration: none;color: rgb(65,68,75); display: flex; justify-content: center;align-items: center;"><i class='bx bxs-envelope' style="margin-right:10px;font-size: 30px;color: hsl(191, 77%, 12%);"></i>hello@merkulov.design</a></h6>
+        </div>
+        <div class="Last" style="color: rgb(65,68,75);">Merkulove © Dexico Template All rights reserved Copyrights 2020</div>
+      </div>
+    </div>
+
+<!-- Bootstrap JavaScript files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script>
+  //Dropdowns
+   function toggleCollapsible(link) {
+      var parent = link.parentNode;
+      var content = link.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        // link.lastElementChild.classList.replace("bx-chevron-up","bx-chevron-down")
+      } else {
+        content.style.display = "block";
+        // parent.style.position = "relative"
+        // link.lastElementChild.classList.replace("bx-chevron-down","bx-chevron-up")
+      }
+    }
+</script>
+</body>
+</html>

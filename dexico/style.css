@@ -1,7 +1,4563 @@
-/*
-	Theme:dexico-theme
-	Description:blog, rent apartment
-	Author:priti
-	Version:1.1
+.color{
+    color: #3C6E71;
+    color: #0F4C5C;
+    color: #41444B;
+    color: #133B5C;
+}
 
-*/
+/* Preview Header  */
+.PreviewHeader{
+    height: 54px;
+    background-color: #262626;
+    line-height: 54px;
+    margin-bottom: 1px;
+}
+.PreviewHeader .logo{
+    width: 182px;
+    min-height: 54px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.PreviewHeader .logo a{
+    color: greenyellow;
+    text-decoration: none;
+    height: 25px;
+    font-family: cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PreviewHeader .logo a i{
+    font-size: 20px;
+}
+
+.PreviewHeader .logo a span{
+    color: white;
+}
+
+.PreviewHeader .BuyAction{
+    width: 154px;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0 12px 0;
+}
+
+.PreviewHeader .BuyAction button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #88d218;
+}
+
+.PreviewHeader .BuyAction button:hover{
+    background-color: #6faf0f;
+
+}
+
+/* Navbar  */
+section nav .container-nav{
+    width: 100%;
+    /* height: 45px; */
+    background-color: white;
+    display: flex;
+}
+
+section nav .container-nav .LogoName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section nav .container-nav .LogoName a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #0e2d46;
+    font-weight: 800;
+}
+section nav .container-nav .LogoName a:hover{
+    font-size: 25px;
+}
+
+section nav .container-nav .NavLinks ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 5px 30px 5px 30px;
+    list-style-type: none;
+    height: 100%;
+}
+
+section nav .container-nav .NavLinks ul{
+    position: relative;
+    color: #3C6E71;
+    text-transform: uppercase;
+}
+
+/* Drop-Down */
+section nav .container-nav .NavLinks ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 145px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+section nav .container-nav .NavLinks ul li .dropdown-content a {
+    font-size: 15px;
+    color: #0F4C5C;
+    background-color: white;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+section nav .container-nav .NavLinks ul li .dropdown-content hr{
+    margin: 0;
+}
+
+section nav .container-nav .NavLinks .dropdown-content a:hover {
+    background-color: #0F4C5C;
+    color:white
+}
+
+section nav .container-nav .NavLinks li:hover .dropdown-content {
+    display: block;
+}
+
+section nav .container-nav .NavLinks li{
+    /* position: relative; */
+    display: inline-block;
+}
+
+section nav .container-nav .NavLinks li{
+    cursor: pointer;
+}
+
+/* Off-Canvas */
+section nav .container-nav .OffCanvaBtn{
+    width: 60px;
+    background-color: white;
+    border-color: white;
+    color: #41444B;
+    font-size: 35px;
+}
+
+/* First Segment */
+.MainPage{
+    width: 100%; 
+    height: auto;
+    /* border: 2px solid black;   */
+    display:flex;
+    justify-content:center;
+}
+
+.MainPage section{
+    width: 80%; 
+    min-height:798px; 
+    /* border: 2px solid yellow; */
+    background-image: url(apt1.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* First Segment */
+.MainPage section .Content .TransitionElements{
+    width: 1043px;
+    height: 270px;
+    margin: 150px 10px 0 10px;
+    /* border: 1px solid pink; */
+}
+
+.MainPage section .Content .TransitionElements .ApartmentText{
+    width: 1043px;
+    color: #133b5c;
+    font-family: "Gothic A1", Sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.MainPage section .Content .TransitionElements .ApartmentText p{
+    max-height: 80px;
+    margin-bottom: 0;
+    scale:1;
+    animation: SCALE 2s ease-in-out alternate;
+} 
+
+@keyframes SCALE {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+
+.MainPage section .Content .TransitionElements .ApartmentTextContent{
+    margin-top: 25px;
+    color: #0e2d46;
+    font-family: "Gothic A1", Sans-serif;
+    font-weight: 500;
+}
+
+.MainPage section .Content .TransitionElements .ApartmentTextContent p{
+    margin-bottom: 0;
+    animation: SCALE 2s ease-in-out alternate;
+}
+
+.MainPage section .Content .Search{
+    padding: 0 10px 0 10px;
+    margin-bottom: 60px;
+}
+
+.MainPage section .Content .Search  form .me-2{
+    margin-right: 0!important;
+}
+
+.MainPage section .Content .Search  form .form-control{
+    border-radius: 0;
+    height: 85px;
+    box-shadow: 0px 2px 30px 0px rgba(15.000000000000007, 76.00000000000004, 92.00000000000007, 0.11);
+    font-style: italic;
+    color: #797a7e;
+}
+
+.MainPage section .Content .Search  form .btn{
+    width: 195px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 16px;
+}
+
+.MainPage section .Content .Search  form .btn:hover{
+    background-color: #133B5C;
+    border-color: #133B5C;
+}
+
+.MainPage section .Content .Search  form input[type=search]:focus{
+    border:0.8px solid black;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    padding: 0.385rem 0.85rem;
+}
+
+/* Popular Tags */
+.MainPage section .Content .PopularTags{
+    width: auto;
+    padding: 0 10px 0 10px;
+}
+
+.MainPage section .Content .PopularTags .Tags{
+    width:auto;
+    /* max-height: 70px; */
+    color: #B0B0B0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.MainPage section .Content .PopularTags .Tags .EachTag{
+    width: 60.766px;
+    height: 16;
+    padding: 10px 20px 10px 20px;
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid #B0B0B0;
+    text-transform: capitalize;
+    text-align: center;
+    transition: 0.8s;
+}
+
+.MainPage section .Content .PopularTags .Tags .EachTag:hover{
+    border: 1px solid #0F4C5C;
+}
+
+/* Second Segment */
+.SecondSegment{
+    width: 100%;
+    min-height: 523.39px;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 120px;
+}
+
+.SecondSegment div{
+    height: auto;
+    /* border: 1px solid #6faf0f; */
+    width:227.66px;
+}
+
+.SecondSegment .Text{
+    padding: 10px 10px 10px 10px; 
+    z-index: 1;
+}
+
+.SecondSegment .Text .Heading{
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-height: 187.17px;
+}
+
+.SecondSegment .Text .Heading h2{
+    font-size: 56px;
+    color: #133b5c;
+    font-weight: 545;
+    font-family: "Gothic A1", Sans-serif;
+    line-height: 1.2em;
+    opacity: 0;
+    transform: translateX(-150%);
+    transition: 2s;
+}
+
+.SecondSegment .Text .TextBody{
+    width: auto;
+    height: 120px;
+    margin-bottom: 40px;
+    color: #41444b;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    opacity: 0;
+    transition: 3s;
+    transform: translateX(-150%);
+}
+
+/* Scroll Animation */
+.SecondSegment .Text .Heading .active{
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.SecondSegment .Text .TextBody.active{
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.SecondSegment .HoverBackground-1.active,
+.SecondSegment .HoverBackground-2.active,
+.SecondSegment .HoverBackground-3.active,
+.SecondSegment .HoverBackground-4.active{
+    opacity: 1;
+}
+/* End  */
+
+.SecondSegment .Text .ViewButton{
+    width: 170.66px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SecondSegment .Text .ViewButton .btn{
+    width: 170.66px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.SecondSegment .Text .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+/* Hover Background */
+/* Pic-1 */
+.SecondSegment .HoverBackground-1{
+    width: 227.66px;
+    height: 523.39px;
+    background-image:url(Brooklyn.png) ;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    transition:1s;
+}
+
+.SecondSegment .HoverBackground-1 .Pics{
+    width: 227.66px;
+    height: 523.39px;
+    opacity: 0.7;
+    transition: 0.6s;
+    background: -webkit-linear-gradient(200deg, #FFFFFF00 56%, #3c6e71 79%);
+    background: linear-gradient(200deg, #FFFFFF00 56%, #3c6e71 79%);
+    /* position: relative; */
+}
+
+.SecondSegment .HoverBackground-1:hover .Pics{
+    background-color:#3c6e71;
+    opacity: 0.7;
+}
+
+/* Pic-2 */
+.SecondSegment .HoverBackground-2{
+    width: 227.66px;
+    height: 523.39px;
+    background-image:url(Manhatten.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    transition:1s;
+}
+
+.SecondSegment .HoverBackground-2 .Pics{
+    width: 227.66px;
+    height: 523.39px;
+    opacity: 0.7;
+    transition: 0.6s;
+    background: -webkit-linear-gradient(200deg, #FFFFFF00 56%, #3c6e71 79%);
+    background: linear-gradient(200deg, #FFFFFF00 56%, #3c6e71 79%);
+}
+
+.SecondSegment .HoverBackground-2:hover .Pics{
+    background-color:#3c6e71;
+    opacity: 0.7;
+}
+
+/* Pic-3 */
+.SecondSegment .HoverBackground-3{
+    width: 227.66px;
+    height: 523.39px;
+    background-image:url(Bronx.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    transition:1s;
+}
+
+.SecondSegment .HoverBackground-3 .Pics{
+    width: 227.66px;
+    height: 523.39px;
+    opacity: 0.7;
+    transition: 0.6s;
+    background: -webkit-linear-gradient(200deg, #FFFFFF00 56%, #3c6e71 79%);
+    background: linear-gradient(200deg, #FFFFFF00 56%, #3c6e71 79%);
+}
+
+.SecondSegment .HoverBackground-3:hover .Pics{
+    background-color:#3c6e71;
+    opacity: 0.7;
+}
+
+/* Pic-4 */
+.SecondSegment .HoverBackground-4{
+    width: 227.66px;
+    height: 523.39px;
+    background-image:url(Queens.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    transition:1s;
+}
+
+.SecondSegment .HoverBackground-4 .Pics{
+    width: 227.66px;
+    height: 523.39px;
+    opacity: 0.7;
+    transition: 0.6s;
+    background: -webkit-linear-gradient(200deg, #FFFFFF00 56%, #3c6e71 79%);
+    background: linear-gradient(200deg, #FFFFFF00 56%, #3c6e71 79%);
+}
+
+.SecondSegment .HoverBackground-4:hover .Pics{
+    background-color:#3c6e71;
+    opacity: 0.7;
+}
+
+.SecondSegment .Pics{
+    position: relative;
+    overflow: hidden;
+}
+
+.SecondSegment .Pics .City{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.SecondSegment .Pics .City .Name{
+    font-size: 24px;
+}
+
+.SecondSegment .Pics .City .Propertys{
+    font-style: italic;
+}
+
+.ThirdSegment{
+    width: 100%;
+    height:979.55px;
+    display: flex;
+    justify-content: center;
+}
+
+.ThirdSegment section{
+    width: 80%;
+    height: 859.55px;
+    margin-bottom: 120px;
+}
+
+.ThirdSegment section .PropertyHeader{
+    width: auto;
+    min-height: 112.39px;
+    padding: 20px 0 30px 0;
+    color: #133b5c;
+    font-size: 40px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.ThirdSegment section .Properties{
+    width: auto;
+    height: 747.16px;
+    display: flex;
+}
+
+.ThirdSegment section .Properties .Property{
+    width: 363.6px;
+    height: 747.16px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.ThirdSegment section .Properties .Property .PropertyContainer{
+    width: auto;
+    height: 559.969px;
+    padding-bottom: 20px;
+    /* background: transparent; */
+}
+
+.ThirdSegment section .Properties .Property .PropertyContainer .PropertyImage{
+    background-position: center center;
+    background-size: cover;
+    height: 539.969px;
+    transition: 0.8s;
+}
+
+.ThirdSegment section .Properties .Property .PropertyContainer .PropertyImage:hover{
+    transform: scale(1.11);
+}
+
+.ThirdSegment section .Properties .Property .Price{
+    position:absolute;
+    width: 78.55px;
+    height: 45.59px;
+    background-color: #3c6e71;
+    z-index: 2;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ThirdSegment section .Properties .Property .AddressLinks{
+    position: absolute;
+    width: 340.94px;
+    height: 30px;
+    bottom: 90px;   
+}
+
+.ThirdSegment section .Properties .Property .AddressLinks a{
+    text-decoration: none;
+    color: #797a7e;
+    font-size: 16px;
+    display: flex;
+}
+
+.ThirdSegment section .Properties .Property .PropertyName{
+    position: absolute;
+    text-decoration: none;
+    color: #133b5c;
+    bottom: 45px;
+}
+
+.ThirdSegment section .Properties .Property .PropertyFooter{
+    position: absolute;
+    width: 340.94px;
+    height: 20px;
+    bottom: 25px;
+}
+
+.ThirdSegment section .Properties .Property .PropertyFooter ul{
+    list-style-type: none;
+    display: flex ;
+    padding: 0;
+    margin: 0;
+    color: #797a7e;
+}
+
+.ThirdSegment section .Properties .Property .PropertyFooter ul li{
+margin-right: 30px;
+}
+
+.ThirdSegment section .Properties .Property .PropertyFooter ul li i{
+    color: #133B5C;
+}
+
+/* Forth Segment  */
+.ForthSegmnet{
+    width: 100%;
+    height: 662.719px;
+    display: flex;
+    justify-content: center;
+}
+
+.ForthSegmnet section{
+    width: 80%;
+    height: 542.719px;
+}
+
+.ForthSegmnet section .Heading{
+    width: auto;
+    max-height: 112.39px;
+    padding: 20px 0 30px 0;
+    font-size: 50px;
+}
+
+.ForthSegmnet section .SSContent{
+    width: 1091.19px;
+    min-height: 410.33px;
+    display: flex;
+}
+
+.ForthSegmnet section .SSContent .SlideShow{
+    width: 50%;
+    height: auto;
+}
+
+/* Slide-Show */
+.ForthSegmnet section .SSContent .SlideShow .carousel-item img{
+    width: auto;
+    height: 359.72px;
+    object-fit: cover;
+}
+
+.ForthSegmnet section .SSContent .SlideShow .carousel-indicators{
+    margin-bottom: 13px !important;
+}
+
+.ForthSegmnet section .SSContent .SlideShow .carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #0f4c5c !important;
+}
+/* End */
+
+.ForthSegmnet section .SSContent .Info{
+    width:50%;
+    height:auto;
+    padding: 70px 20px 20px 20px;
+    display: block;
+}
+
+.ForthSegmnet section .SSContent .Info .InfoText{
+    padding-bottom: 15px;
+}
+
+.ForthSegmnet section .SSContent .Info .AddressLinks a{
+    text-decoration: none;
+    color: #797a7e;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.ForthSegmnet section .SSContent .Info .AddressLinks {
+    padding-bottom: 20px;
+}
+
+.ForthSegmnet section .SSContent .Info .Details {
+    color: #3C6E71;
+    padding-bottom: 30px;
+}
+
+/* Fifth Segment */
+.FifthSegmnet{
+    width: 100%;
+    height: 887.56px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.FifthSegmnet section{
+    width: 80%;
+    height: 767.56px;
+    display: flex;
+}
+
+.FifthSegmnet section #FirstPic{
+    width: 436px;
+    height: 745px;
+    padding: 10px;
+    perspective: 1200px;
+    opacity: 0;
+    transition: 1s;
+    /* --rotateX: -4.66361deg;
+    --rotateY: 1.55198deg;
+    transform: rotateX(var(--rotateX))rotateY(var(--rotateY)); */
+}
+
+.FifthSegmnet section #FirstPic.active{
+    opacity: 1;
+}
+
+.FifthSegmnet section #FirstPic img{
+    max-width: 416px;
+    height: 725px;
+    transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.FifthSegmnet section #FirstPic img:hover{
+    opacity: 1;
+    transition: 0.8s;
+    filter: brightness(110%);
+}
+
+.FifthSegmnet section .Content-1{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+}
+
+.FifthSegmnet section .Content-1 .Title{
+    width: 100%;
+    height: 124.78px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #133b5c;
+    font-size: 50px;
+    font-weight: 500;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.FifthSegmnet section .Content-1 .Title.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.FifthSegmnet section .Content-1 .Text{
+    margin-top: 50px;
+    color: #797a7e;
+    margin-bottom: 30px;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(-30%);
+}
+
+.FifthSegmnet section .Content-1 .Text.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.FifthSegmnet section .Content-1 .Data{
+    width: 100%;
+    min-height: 124.28px;
+    margin-bottom: 20px;
+    display: flex;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.FifthSegmnet section .Content-1 .Data.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.FifthSegmnet section .Content-1 .Data .Data-1{
+    width: 33.33%;
+    height: 124.28px;
+}
+
+.FifthSegmnet section .Content-1 .Data .Data-1 .Num{
+    color: #133B5C;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.FifthSegmnet section .Content-1 .Data .Data-1 .SubTitle{
+    color: #133B5C;
+    font-weight: 500;
+    text-align: center;
+}
+
+.FifthSegmnet section .Content-1 img{
+    width: 100%;
+    height: 330px;
+    filter: brightness(85%);
+    opacity: 0;
+    transform: translateY(30%);
+    transition: 1s;
+}
+
+.FifthSegmnet section .Content-1 img.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.FifthSegmnet section .Content-1 img:hover{
+    filter: brightness(100%);
+}
+
+/* Sixth Segment */
+.SixthSegment{
+    width: 100%;
+    height: 563.17px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.SixthSegment section{
+    width: 80%;
+    height: 443.17px;
+    padding: 10px;
+}
+
+.SixthSegment section .ClientTitle{
+    width: 100%;
+    height: 112.39px;
+    color: #133b5c;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    opacity: 0;
+    transform: translateY(-30%);
+    transition: 1s;
+}
+
+.SixthSegment section .ClientTitle.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.SixthSegment section .CustomerSlideShow{
+    width: 100%;
+    height: 309px;
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-inner{
+    height: 266px;
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-inner .carousel-item{
+    height: 266px;
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-inner .carousel-item .Special{
+    height: 90.5px; 
+    width: 742.84px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: italic;
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption{
+    height: 155px;
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .SlideImage{
+    /* position: absolute; */
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    margin-left: 46%;
+    margin-bottom: 5px;
+    object-fit: cover;
+    background-position: center center;
+    background-size: cover;
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h5{
+    color: #41444b;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p{
+    color: #797a7e;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-control-prev-icon,.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-control-next-icon{
+    background-color:#b0b0b0;
+    border-radius: 25%
+}
+
+.SixthSegment section .CustomerSlideShow #carouselExampleCaptions .carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #0f4c5c !important;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Footer */
+.Footer{
+    width: 100%;
+    height: 594.19px;
+    background-image: url(Footer-Pic.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer section{
+    width: 80%;
+    height: 514.19px;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.Footer section .FooterHeader{
+    width: 100%;
+    height: 87.188px;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.Footer section .FooterHeader .Heading-1{
+    width: 746.66px;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 150px;
+    color: #133b5c;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.Footer section .FooterHeader .Heading-2{
+    width: 322.53px;
+    height: auto;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 550;
+}
+
+.Footer section .FooterContent{
+    width: 100%;
+    height: 176px;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.Footer section .FooterContent .F-Content{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.Footer section .FooterContent .F-Content ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Footer section .FooterContent .F-Content ul li{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 20px;
+}
+
+.Footer section .FooterContent .F-Content ul li a{
+    text-decoration: none;
+    color: #133b5c;
+    font-weight: 500;
+}
+
+.Footer section .FooterContent .F-Content .Box-1 ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Footer section .FooterContent .F-Content .Box-2{
+    height: 100%;
+    height: 56px;
+}
+
+.Footer section .FooterCredits{
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    color: #797a7e;
+}
+
+/* Contacts */
+/* Element-1 */
+.Element-1{
+    width: 100%;
+    height: 416.39px;
+    display: flex;
+    justify-content: center;
+}
+
+.Element-1 section{
+    width: 80%;
+    height: 416.39px;
+}
+
+.Element-1 section .FirstImage{
+    width: 100%;
+    height:100%;
+    background-image: url(Contact-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Element-1 section .FirstImage .FirstImageHeader{
+    position: absolute;
+    top: 295px;
+    font-size: 60px;
+    color: #133b5c;
+    margin-left: 13px;
+    font-weight: 430;
+}
+
+.Element-1 section .FirstImage .FirstImageText{
+    position: absolute;
+    font-size: 13px;
+    top: 390px;
+    margin-left: 13px;
+    color: #797a7e;
+}
+
+.Element-2{
+    margin-top: -100px;
+    width: 1366px;
+    height: 660px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    /* z-index: 1; */
+}
+
+.Element-2 section{
+    width: 78%;
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+}
+
+.Element-3{
+    width: 100%;
+    height: 446.34px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.Element-3 section{
+    width:80%;
+    height: 446.34px;
+    display: flex;
+}
+
+.Element-3 section .MessageBox{
+    width: 50%;
+    height: 446.34px;
+    padding: 20px;
+}
+
+.Element-3 section .MessageBox .MessageHeader{
+    width: 100%;
+    height: 62.39px;
+    margin-bottom: 20px;
+    font-size: 52px;
+    font-weight: 400;
+    color: #133b5c;
+}
+
+.Element-3 section .MessageBox .MessageContent{
+    width: 100%;
+    height:78.39px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.Element-3 section .MessageBox .MessageContent .MessageInputs{
+    width: 50%;
+    height: 78.39px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Element-3 section .MessageBox .MessageContent .MessageInputs .Heading{
+    width: 100%;
+    height: 24px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.Element-3 section .MessageBox .MessageContent .MessageInputs input{
+    height: 54.39px;
+    border-radius: 0;
+    border-color:#797a7e;
+    font-style: italic;
+    
+}
+
+.Element-3 section .MessageBox .MessageContent .MessageInputs input[type=search]:focus{
+    border:1.9px solid black !important;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #797a7e;
+    box-shadow: none;
+}
+
+.Element-3 section .MessageBox .MessageBigBox{
+    width: 100%;
+    min-height: 145.56px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Element-3 section .MessageBox .MessageBigBox .Heading{
+    width: 100%;
+    height: 24px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.Element-3 section .MessageBox .MessageBigBox textarea{
+    width: 100%;
+    height: 121.56px;
+    border-radius: 0;
+    border-color: #797a7e;
+    font-style: italic;
+}
+
+.Element-3 section .MessageBox .MessageBigBox textarea:focus{
+    border-color: black;
+    box-shadow: none;
+}
+
+
+.Element-3 section .MessageBox .btn{
+    width: 169.05px;
+    height: 60px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 20px;
+    float: right;
+}
+
+.Element-3 section .MessageBox .btn:hover{
+    border-color: #0f4c5c;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.Element-3 section .MessageBox .SubText{
+    width: 100%;
+    height: 48px;
+    color: #41444b;
+    margin-bottom: 40px;
+}
+
+.Element-3 section .MessageBox .F-Content .Box-1{
+    margin-bottom: 30px;
+}
+
+.Element-3 section .MessageBox .F-Content .Box-1 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Element-3 section .MessageBox .F-Content .Box-1 ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Element-3 section .MessageBox .F-Content .Box-1 ul li a{
+    text-decoration: none;
+    color: #133B5C;
+    font-size: 19px;
+}
+
+.Element-3 section .MessageBox .F-Content .Box-2{
+    height: 100%;
+    height: 56px;
+}
+
+/* Page-404 */
+.Page-404{
+    width: 100%;
+    height:628.391px;    
+}
+
+.Page-404 section{
+    width: 100%;
+    height: 628.391px;
+    display: flex;
+    justify-content: center;
+}
+
+.Page-404 section .Pic-404{
+    position: absolute;
+    background-image: url(./ABOUT/Pic-404.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 628.391px;
+    width: 1366px;
+    opacity: 0.2;
+    color: black;
+}
+
+.Page-404 section .Content-404{
+    width: 85%;
+    height: 628.391px;
+    position: relative;
+    padding: 10px;
+}
+
+.Page-404 section .Content-404 .Header-404{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0f4c5c;
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.Page-404 section .Content-404 .SubHeader-404{
+    width: 100%;
+    height: 62.391px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #0f4c5c;
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 52px;
+    font-weight: 550;
+    line-height: 1.2em;
+}
+
+.Page-404 section .Content-404 form{
+    margin-bottom: 60px;
+}
+
+.Page-404 section .Content-404 form .me-2{
+    margin-right: 0!important;
+}
+
+.Page-404 section .Content-404 form .form-control{
+    border-radius: 0;
+    height: 85px;
+    box-shadow: 0px 2px 30px 0px rgba(15.000000000000007, 76.00000000000004, 92.00000000000007, 0.11);
+    font-style: italic;
+    color: #797a7e;
+}
+
+.Page-404 section .Content-404 form .btn{
+    width: 195px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 16px;
+}
+
+.Page-404 section .Content-404 form .btn:hover{
+    background-color: #133B5C;
+    border-color: #133B5C;
+}
+
+.Page-404 section .Content-404 form input[type=search]:focus{
+    border:0.8px solid black;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    padding: 0.385rem 0.85rem;
+}
+
+.Page-404 section .Content-404 .GoToHome{
+    width: 100%;
+    height: 85px;
+}
+
+.Page-404 section .Content-404 .GoToHome .SubHeaderHome{
+    width: 100%;
+    height: 16px;
+    text-align: center;
+    color: #3C6E71;
+}
+
+.Page-404 section .Content-404 .GoToHome .ViewButton{
+    width: 230.66px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Page-404 section .Content-404 .GoToHome .ViewButton .btn{
+    width: 230.66px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Page-404 section .Content-404 .GoToHome .ViewButton .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+.SocialMediaFooter{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* SP-Element-1 */
+.SP-Element-1{
+    width: 100%;
+    height:249.188px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.SP-Element-1 img{
+    width: 100%;
+    height:229.188px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    object-fit: cover;
+}
+
+/* .SP-Element-2 */
+.SP-Element-2{
+    width: 100%;
+    height: 3261.53px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.SP-Element-2 section{
+    width: 1140px;
+    height: 3261.53px;
+    display: flex;
+}
+
+/* .SP-Element-2 section div{
+    border: 1px solid red;
+} */
+
+.SP-Element-2 section .SP-Box-1{
+    width: 759.98px;
+    height: 100%;
+    padding: 30px;
+}
+
+.SP-Element-2 section .SP-Box-1 .Path{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 25px;
+    color: #262626;
+    font-size: 13px;
+}
+
+.SP-Element-2 section .SP-Box-1 .Heading{
+    height: 135.188px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 53px;
+    color: #0e2d46;
+    font-weight: 500;
+    position: relative;
+}
+
+.SP-Element-2 section .SP-Box-1 .SubHeading{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.SP-Element-2 section .SP-Box-1 .SubHeading a{
+    text-decoration: none;
+    color: #797a7e;
+    font-size: 15px;
+    margin-right: 15px;
+} 
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Text{
+    width: 100%;
+    height: 1452.33px;
+    color: rgb(65,68,75);
+    margin-bottom: 50px;
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Text p{
+    margin-bottom: 14.4px;
+}
+
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Text .LargeText{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 14.400px;
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Text blockquote{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Text blockquote p{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: italic;
+    /* color: #262626; */
+    margin-bottom: 14.4px;
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Profile{
+    width: 100%;
+    height: 214.8px;
+    margin-bottom: 100px;
+    padding: 30px;
+    display: flex;
+    box-shadow: 0px 0px 15px 0px rgba(60.00000000000002, 110.00000000000006, 113.00000000000006, 0.15);
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Profile .ProfilePic{
+    width: 100px;
+    height: 100px;
+    background-image: url(BLOG/ProfilePic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 19px;
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Profile .ProfileContent{
+    width: 519.98px;
+    height: 100%;
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Profile .ProfileContent a{
+    width: 100%;
+    height:26px;
+    font-size: 22.5px;
+    font-weight: 500;
+    color: #0f4c5c;
+    text-decoration: none;
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Profile .ProfileContent .ProfileBio{
+    color: rgb(65,68,75);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.SP-Element-2 section .SP-Box-1 .SP-Element-2-Profile .ProfileContent .btn{
+    width: 124.61px;
+    height: 48.8px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 16px;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments{
+    width: 100%;
+    height: 1111.22px;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .CommentTitles{
+    color: #133b5c;
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Comment{
+    width: 100%;
+    height: 139.19px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Comment .Logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-image: url(./BLOG/Avatar.jpg);
+    object-fit: cover;
+    background-position: center center;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Comment .CommentInfo{
+    width: 634.98px;
+    height: 100%;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Comment .CommentInfo .Header{
+    width: 100%;
+    height: 18.406px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Comment .CommentInfo .Content{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Replies {
+    width: 100%;
+    height: 752.86px;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Replies p{
+    margin-bottom: 14.4px;
+    color: rgb(65,68,75);
+    font-size: 16px;
+    width: 100%;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Replies p label{
+    font-style: italic;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Replies p input{
+    width: 100%;
+    height: 54.39px;
+    padding: 15px 20px 15px 20px;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Replies .btn{
+    width: 236.25px;
+    height: 56px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 20px;
+}
+
+.SP-Element-2 section .SP-Box-1 .PostComments .Replies .btn:hover{
+    background-color: #133B5C;
+    border-color: #133B5C;
+}
+
+.SP-Element-2 section .SP-Box-2{
+    width: calc(1140px - 759.97px);
+    height: 100%;
+    padding: 30px;
+}
+
+.SP-Element-2 section .SP-Box-2 .Header{
+    width: 100%;
+    height: 26px;
+    margin-bottom: 20px;
+    color: rgb(15,76,92);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.SP-Element-2 section .SP-Box-2 .Box-2-options{
+    width: 100%;
+    height: 123.375px;
+    margin-bottom: 40px;
+}
+
+.SP-Element-2 section .SP-Box-2 .Box-2-options ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.SP-Element-2 section .SP-Box-2 .Box-2-options ul li{
+    margin-bottom: 10px;
+}
+
+.SP-Element-2 section .SP-Box-2 .Box-2-options ul li a{
+    text-decoration: none;
+    color: #0f4c5c;
+    font-size: 15px;
+}
+
+.SP-Element-2 section .SP-Box-2 .LatestPosts{
+    width: 100%;
+    height: 82.19px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.SP-Element-2 section .SP-Box-2 .LatestPosts a .Pic{
+    width: 105.59px;
+    height: 100%;
+    margin-right: 4px;
+    background-image: url(https://dexico.templatekit.co/wp-content/uploads/sites/26/2020/09/black-and-wood-interior-1536x1024.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.SP-Element-2 section .SP-Box-2 .LatestPosts .Body{
+    width: 204px;
+    height: 100%;
+}
+
+.SP-Element-2 section .SP-Box-2 .LatestPosts .Body .Title{
+    font-size: 16px;
+    width: 100%;
+    height: 41.59px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.SP-Element-2 section .SP-Box-2 .LatestPosts .Body .Title a{
+    color: #133b5c;
+    text-decoration: none;
+}
+
+.SP-Element-2 section .SP-Box-2 .LatestPosts .Body .Date{
+    width: 100%;
+    height: 15.59px;
+    font-size: 12px;
+    color: rgb(65,68,75);
+}
+
+.SP-Element-2 section .SP-Box-2 .Tags{
+    width: 100%;
+    height: 180px;
+}
+
+.SP-Element-2 section .SP-Box-2 .Tags .Tag{
+    width: 100px;
+    height: 27.59px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    border: 1px solid rgb(65,68,75);
+    border-radius: 1rem;
+}
+
+.SP-Element-2 section .SP-Box-2 .Tags .Tag a{
+    text-decoration: none;
+    color: rgb(65,68,75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SP-Element-2 section .SP-Box-2 .Tags .Tag:hover a{
+    color: #0F4C5C;
+    border-color: #0F4C5C;
+}
+
+.SP-Element-2 section .SP-Box-2 .Tags .Tag:hover{
+    border-color: #0F4C5C;
+}
+
+.SP-Element-2 section .SP-Box-2 .Tags .G-Tag,.SP-Element-2 section .SP-Box-2 .Tags .P-Tag{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Home-2-Element-1  */
+.Home-2-Element-1{
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+
+.Home-2-Element-1 section{
+    width: 1140px;
+    height: 470px;
+    padding-top: 150px;
+}
+
+.Home-2-Element-1 section .Header{
+    width: 100%;
+    height: 192px;
+    margin-bottom: 30px;
+    font-size: 86px;
+    color: hsl(192, 72%, 21%);
+    font-weight: 600;
+    line-height: 96px;
+    font-family: "Gothic A1", Sans-serif;
+}
+
+.Home-2-Element-1 section .SubHeader{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 50px;
+    color: rgb(65,68,75);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Home-2-Element-2  */
+.Home-2-Element-2{
+    width: 100%;
+    height: 510.39px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.Home-2-Element-2 section{
+    width: 1140px;
+    height: 510.39px;
+}
+
+.Home-2-Element-2 section .Pic{
+    position: relative;
+    width: 100%;
+    height: 120%;
+    background-image: url(HOME/H2-IMG-1.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.Home-2-Element-2 section .Content{
+    width: 940px;
+    height: 160.39px;
+    display: flex;
+    padding: 40px;
+    margin-top: -160.39px;
+    background-color: white;
+}
+
+.Home-2-Element-2 section .Content .Box{
+    height: 80.39px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Home-2-Element-2 section .Content .Box label{
+    color: #41444b;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5em;
+    height: 24px;
+}
+
+/* .Home-2-Element-2 section .Content .Box input{
+    color: #797a7e;
+    border: 2px solid #a6a7ad;
+    font-style: italic;
+    height: 56.39px;
+    padding: 15px 20px 15px 20px;
+} */
+
+/* .MainPage section .Content .Search  form .me-2{
+    margin-right: 0!important;
+} */
+
+.Home-2-Element-2 section .Content .Box .form-control{
+    color: #797a7e;
+    border: 2px solid #a6a7ad;
+    font-style: italic;
+    height: 56.39px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 0;
+}
+
+.Home-2-Element-2 section .Content .Box input[type=search]:focus{
+    border:2.5px solid #797a7e;
+    box-shadow: none;
+    color: #0f4c5c;
+}
+
+.Home-2-Element-2 section .Content .Box input[type=number]:focus{
+    border:2.5px solid #797a7e;
+    box-shadow: none;
+    color: #0f4c5c;
+}
+
+.Home-2-Element-2 section .Content .Box input[type=number]:focus::-webkit-inner-spin-button {
+    width: 5px;
+    height: 30px;
+}
+
+.Home-2-Element-2 section .Content .Box input[type=number]:hover::-webkit-inner-spin-button {  
+    width: 5px;
+    height: 30px;
+}
+
+.Home-2-Element-2 section .Content .btn{
+    width: 156px;
+    height: 60px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.Home-2-Element-2 section .Content .btn:hover{
+    border-color: #0f4c5c;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* Home-2-Element-3 */
+.Home-2-Element-3{
+    width: 100%;
+    height: 216.78px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Home-2-Element-3 section{
+    width: 1140px;
+    height: 216.78px;
+    padding-left: 189.98px;
+    padding-right: 189.98px;
+}
+
+.Home-2-Element-3 section .Head{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.Home-2-Element-3 section .Head .Header{
+    width: 100%;
+    height: 124.78px;
+    color: rgb(19,59,92);
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 55px;
+    font-weight: 540;
+    line-height: 1.2em;
+}
+
+.Home-2-Element-3 section .Head .SubHeader{
+    width: 100%;
+    height: 72px;
+    color: rgb(65,68,75);
+}
+
+/* Home-2-Element-4 */
+.Home-2-Element-4{
+    width: 100%;
+    height: 522px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.Home-2-Element-4 section{
+    width: 1140px;
+    height: 522px;
+    padding: 10px;
+    /* border: 1px solid palevioletred; */
+    position: relative;
+}
+
+/* .Home-2-Element-4 section div{
+    border: 1px solid red;
+} */
+
+.Home-2-Element-4 section .Pic{
+    width: 100%;
+    height: 100%;
+    background-image: url(HOME/H2-IMG-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    transition: 0.2s;
+}
+
+.Home-2-Element-4 section .Pic:hover{
+    filter: brightness(50%);
+}
+
+.Home-2-Element-4 section .PauseButton{
+    position: absolute;
+    width: 110px;
+    height: 102px;
+    top: 45%;
+    left: 45%;
+}
+
+.Home-2-Element-4 section .PauseButton .Circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.4;
+}
+
+.Home-2-Element-4 section .PauseButton .Pause{
+    width: 45px;
+    height: 45px;
+    margin-top: -72px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-2-Element-4 section .PauseButton .Pause a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(16,110,113);
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-2-Element-4 section .PauseButton .Pause a i{
+    font-size: 90px;
+    transition: 0.2s;
+}
+
+.Home-2-Element-4 section .PauseButton .Pause a:hover i{
+    transform: scale(1.1);
+    color: #797a7e;
+}
+
+/* Home-2-Element-5  */
+.Home-2-Element-5{
+    width: 100%;
+    height: 1502.77px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.Home-2-Element-5 section{
+    width: 1140px;
+    height: 1502.77px;
+    display: flex;
+}
+
+.Home-2-Element-5 section .ApartmentBox{
+    width: 570px;
+    height: 100%;
+    padding: 30px;
+}
+
+.Home-2-Element-5 section .ApartmentBox .Header{
+    width: 100%;
+    min-height: 62.39px;
+    color: #133b5c;
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.Home-2-Element-5 section .ApartmentBox .Header{
+    width: 100%;
+    height: 48px;
+    color: rgb(65,68,75);
+}
+
+.Home-2-Element-5 section .ApartmentBox .PButton{
+    width: 100%;
+    min-height: 110px;
+}
+
+.Home-2-Element-5 section .ApartmentBox .btn{
+    width: 212.69px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Home-2-Element-5 section .ApartmentBox .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+.Home-2-Element-5 section .ApartmentBox .BoxPic{
+    width: 100%;
+    margin-bottom: 80px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.Home-2-Element-5 section .ApartmentBox .BoxPic .PFooter{
+    position: absolute;
+    width:390px;
+    min-height: 171.19px;
+    bottom: 0;
+    background-color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Home-2-Element-5 section .ApartmentBox .BoxPic .PFooter .Header{
+    width: 100%;
+    height: 67.19px;
+    margin-bottom: 20px;
+    color: #133b5c;
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.Home-2-Element-5 section .ApartmentBox .BoxPic .PFooter .PropertyFooter ul{
+    list-style-type: none;
+    display: flex ;
+    padding: 0;
+    margin: 0;
+    color: #797a7e;
+}
+
+.Home-2-Element-5 section .ApartmentBox .BoxPic .PFooter .PropertyFooter ul li{
+    margin-right: 30px;
+}
+
+.Home-2-Element-5 section .ApartmentBox .BoxPic .PFooter .PropertyFooter ul li i{
+    color: #133B5C;
+}
+
+/* Home-2-Element-6 */
+.Home-2-Element-6{
+    width: 100%;
+    height: 376.88px;
+    margin-bottom: 180px;
+    display: flex;
+    /* border:1px solid blue; */
+}
+
+.Home-2-Element-6 .Div-1{
+    width: 455.33px;
+    height: 100%;
+    position: relative;
+    /* border:1px solid brown; */
+}
+
+.Home-2-Element-6 .Div-1 .PicDiv{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Home-2-Element-6 .Div-1 .PicDiv .Pic{
+    width: 100%;
+    height: 160%;
+    background-image: url(HOME/H2-IMG-7.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.Home-2-Element-6 .Div-1 .Pic-2{
+    position: absolute;
+    width: 355.33px;
+    height: 263.88px;
+    background-image: url(HOME/H2-IMG-8.jpg);
+    background-position: center center;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+    margin-right: -100px;
+    margin-bottom: -87px;
+}
+
+.Home-2-Element-6 .Div-2{
+    width: 683px;
+    height: 100%;
+    padding-left: 200px;
+}
+
+.Home-2-Element-6 .Div-2 .Header{
+    color: rgb(19,59,92);
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 53px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.Home-2-Element-6 .Div-2 .SubHeader{
+    width: 100%;
+    height: 96px;
+    font-size: 16.51px;
+    color: rgb(65,68,75);
+}
+
+.Home-2-Element-6 .Div-2 .SubHeader-2{
+    width: 100%;
+    height: 76.78px;
+    font-size: 17px;
+}
+
+.Home-2-Element-6 .Div-2 .PButton{
+    width: 100%;
+    min-height: 80px;
+}
+
+.Home-2-Element-6 .Div-2 .PButton .btn{
+    width: 212.69px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Home-2-Element-6 .Div-2 .PButton .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+/* Home-2-Element-7 */
+.Home-2-Element-7{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 697.34px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.Home-2-Element-7 section{
+    width: 1140px;
+    height: 100%;
+    /* border: 1px solid pink; */
+    padding: 10px;
+}
+
+/* .Home-2-Element-7 section{
+    border: 1px solid blue;
+} */
+
+.Home-2-Element-7 section .Header{
+    width: 100%;
+    height: 124.78px;
+    color: #133b5c;
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 52px;
+    font-weight: 540;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.Home-2-Element-7 section #carouselExampleDark{
+    width: 100%;
+    height: 550px;
+}
+
+.Home-2-Element-7 section #carouselExampleDark .carousel-inner{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+.Home-2-Element-7 section #carouselExampleDark .carousel-inner div .img-size{
+    width: 100%;
+    height: 450px;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.Home-2-Element-7 section #carouselExampleDark .carousel-indicators{
+    width: 1120px;
+    height: 92.56px;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.Home-2-Element-7 section #carouselExampleDark .carousel-indicators button{
+    width: 216px;
+    height: 92.56px;
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    filter: brightness(75%);
+}
+
+.Home-2-Element-7 section #carouselExampleDark .carousel-indicators button:focus,.Home-2-Element-7 section #carouselExampleDark .carousel-indicators .active{
+    filter: brightness(100%);
+}
+
+/* Home-2-Element-8 */
+.Home-2-Element-8{
+    width: 100%;
+    height: 438.11px;
+    display: flex;
+    justify-content: center
+}
+
+.Home-2-Element-8 section{
+    width: 1140px;
+    height: 438.11px;
+    border-top: 1px solid #979797;
+    padding-top: 60px;
+}
+
+.Home-2-Element-8 section .LogoName{
+    width: 100%;
+    height: 55.52px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.Home-2-Element-8 section .LogoName a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: #0e2d46;
+    font-weight: 800;
+}
+
+.Home-2-Element-8 section ul{
+    width: 100%;
+    height: 39.59px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.Home-2-Element-8 section ul li{
+    min-width: 150px;
+    height: 39.59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-2-Element-8 section ul li a{
+    text-decoration: none;
+    color: #0F4C5C;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.Home-2-Element-8 section ul li a:hover{
+    color: #3C6E71;
+}
+
+.Home-2-Element-8 section .LFooter{
+    color: rgb(65,68,75);
+    font-size: 16px;
+}
+
+/* Home-3-Element-1 */
+.Home-3-Element-1{
+    width: 100%;
+    height: 2991.03px;
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+/* .Home-3-Element-1 div{
+    border: 1px solid blue;
+} */
+
+
+.Home-3-Element-1 .Sidebar{
+    width: 350px;
+    height: 100%;
+    padding-top: 80px;
+    border-right: 0.7px solid #0e2d46;
+}
+
+.Home-3-Element-1 .Sidebar .LogoName{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.Home-3-Element-1 .Sidebar .LogoName a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #0e2d46;
+    font-weight: 800;
+
+}
+
+.Home-3-Element-1 .Sidebar .Tabs{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 40px;
+    text-decoration: none;
+    padding: 0;
+    position: relative;
+    
+}
+
+.Home-3-Element-1 .Sidebar .Tabs li{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.Home-3-Element-1 .Sidebar .Tabs li a i{
+    margin-left: 5px;
+}
+
+.Home-3-Element-1 .Sidebar .Tabs li .collapsible-content{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    min-width: 60px;
+}
+
+.Home-3-Element-1 .Sidebar .Tabs li a{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+  
+.Home-3-Element-1 .Sidebar .Tabs li .collapsible-content a{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.Home-3-Element-1 .Sidebar .Tabs li .collapsible-content a{ 
+    background-color: #fff;
+}
+  
+.Home-3-Element-1 .Sidebar .Tabs li a:hover,
+.Home-3-Element-1 .Sidebar .Tabs li .collapsible-content a:hover{
+    color: #3c6e71;
+}
+
+.Home-3-Element-1 .Sidebar .Tabs li a,
+.Home-3-Element-1 .Sidebar .Tabs li .collapsible-content a{
+    color: rgb(65,68,75);
+    font-family: "Gothic A1", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.Home-3-Element-1 .Sidebar .Tabs li .collapsible-content {
+    display: none;
+}
+  
+.Home-3-Element-1 .FullSide{
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.Home-3-Element-1 .FullSide .Header{
+    width: 100%;
+    height: 192px;
+    color: rgb(19,59,92);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+    padding-left: 10px;
+}
+
+.Home-3-Element-1 .FullSide .SubHeader{
+    width: 100%;
+    height: 48px;
+    color: rgb(65,68,75);
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.Home-3-Element-1 .FullSide .PButton{
+    width: 100%;
+    min-height: 60px;
+    padding-left: 10px;
+    margin-bottom: 100px;
+}
+
+.Home-3-Element-1 .FullSide .PButton .btn{
+    min-width: 186.23px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Home-3-Element-1 .FullSide .PButton .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+.Home-3-Element-1 .FullSide .Box{
+    width: 100%;
+    height: 641.28px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+/* Apartment Box  */
+/* .ThirdSegment section .Properties{
+    width: auto;
+    height: 747.16px;
+    
+} */
+
+.Home-3-Element-1 .FullSide .Box .Property{
+    width: 363.6px;
+    height: 641.28px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .PropertyContainer{
+    width: auto;
+    height: calc(559.969px - 105.88px);
+    padding-bottom: 20px;
+    /* background: transparent; */
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .PropertyContainer .PropertyImage{
+    background-position: center center;
+    background-size: cover;
+    height: calc(539.969px - 105.88px);
+    transition: 0.8s;
+}
+
+/* .Home-3-Element-1 .FullSide .Box .Property .PropertyContainer .PropertyImage:hover{
+    transform: scale(1.11);
+} */
+
+.Home-3-Element-1 .FullSide .Box .Property .Price{
+    position:absolute;
+    width: 78.55px;
+    height: 45.59px;
+    background-color: #3c6e71;
+    z-index: 2;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .AddressLinks{
+    position: absolute;
+    width: 340.94px;
+    height: 30px;
+    bottom: 90px;   
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .AddressLinks a{
+    text-decoration: none;
+    color: #797a7e;
+    font-size: 16px;
+    display: flex;
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .PropertyName{
+    position: absolute;
+    text-decoration: none;
+    color: #133b5c;
+    bottom: 45px;
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .PropertyFooter{
+    position: absolute;
+    width: 340.94px;
+    height: 20px;
+    bottom: 25px;
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .PropertyFooter ul{
+    list-style-type: none;
+    display: flex ;
+    padding: 0;
+    margin: 0;
+    color: #797a7e;
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .PropertyFooter ul li{
+    margin-right: 30px;
+}
+
+.Home-3-Element-1 .FullSide .Box .Property .PropertyFooter ul li i{
+    color: #133B5C;
+}
+
+.Home-3-Element-1 .FullSide .LogoName{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    margin-top: 170px;
+    margin-bottom: 40px;
+}
+
+.Home-3-Element-1 .FullSide .LogoName a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    color: #0e2d46;
+    font-weight: 800;
+
+}
+
+/* Property-List-Element-1 */
+.Property-List-Element-1{
+    width: 1366px;
+    /* height: 2560px; */
+    height: 100%;
+    padding-left: 100px;
+    display: flex;
+}
+
+.Property-List-Element-1 .Box-1{
+    width: 843.98px;
+    height: 100%;
+}
+
+.Property-List-Element-1 .Box-1 .LinkPath{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.Property-List-Element-1 .Box-1 .LinkPath a{
+    color: #3C6E71;
+    text-decoration: none;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo{
+    position: relative;
+    width: 100%;
+    height: 400.55px;
+    padding: 40px;
+    margin-bottom: 40px;
+    color: rgb(19,59,92);
+    box-shadow: 0px 0px 15px 0px rgba(60.00000000000002, 110.00000000000006, 113.00000000000006, 0.23);
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .P-Element-1{
+    width: 100%;
+    height: 24.766px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    list-style-type: none;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .P-Element-1 li{
+    width: 195.98px;
+    height: 24.766px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .P-Element-2{
+    width: 100%;
+    height: 80.38px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .Box{
+    height: 80.38px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .Box label{
+    color: #41444b;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5em;
+    height: 24px;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .P-Element-2 .Box .form-control{
+    color: #797a7e;
+    border: 2px solid #a6a7ad;
+    font-style: italic;
+    height: 56.39px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 0;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .P-Element-2 .Box input[type=search]:focus{
+    border:2.5px solid #797a7e;
+    box-shadow: none;
+    color: #0f4c5c;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .P-Element-2 .Box input[type=number]:focus{
+    border:2.5px solid #797a7e;
+    box-shadow: none;
+    color: #0f4c5c;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .P-Element-2 .Box input[type=number]:focus::-webkit-inner-spin-button {
+    width: 5px;
+    height: 30px;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .P-Element-2 .Box input[type=number]:hover::-webkit-inner-spin-button {  
+    width: 5px;
+    height: 30px;
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .btn{
+    width: 152.86px;
+    height: 60px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 20px;
+    margin-left: 20px;
+    float: right;
+    /* margin-top: 20px; */
+}
+
+.Property-List-Element-1 .Box-1 .SearchInfo .btn:hover{
+    border-color: #0f4c5c;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box{
+    width: 100%;
+    height: 287.98px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .Pic{
+    width: 421.98px;
+    height: 100%;
+    padding: 10px;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .Pic .Img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .Pic .Img:hover{
+    transform: scale(1.09);
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo{
+    width: calc(100% - 421.98px);
+    height: 100%;
+    padding: 40px 10px 40px 10px;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo .Date{
+    width: 100%;
+    height: 16.8px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: #797a7e;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo .Location{
+    width: 100%;
+    height: 32px;
+    margin-bottom: 15px;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo .PlaceName{
+    width: 100%;
+    height: 33.59px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(19,59,92);
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo .PropertyFooter{
+    /* position: absolute; */
+    width: 100%;
+    height: 20px;
+    margin-bottom: 16px;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo .PropertyFooter ul{
+    list-style-type: none;
+    display: flex ;
+    padding: 0;
+    margin: 0;
+    color: #797a7e;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo .PropertyFooter ul li{
+margin-right: 30px;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo .PropertyFooter ul li i{
+    color: #133B5C;
+}
+
+.Property-List-Element-1 .Box-1 .D-Box .PicInfo .Price{
+    width: 100%;
+    height: 33.59px;
+    color: rgb(19,59,92);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.Property-List-Element-1 .Box-2{
+    width: calc(100% - 843.98px);
+    height: 490px;
+    padding: 30px;
+    position: relative;
+}
+
+/* Property-Details-Element-1 */
+.Property-Details-Element-1{
+    width: 100%;
+    height: 465.22px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.Property-Details-Element-1 .Box{
+    width: 683px;
+    height: 100%;
+    padding: 5px;
+}
+
+.Property-Details-Element-1 .Box #carouselExampleIndicators .carousel-inner .carousel-item{
+    height: 100%;
+}
+
+.Property-Details-Element-1 .Box #carouselExampleIndicators .carousel-inner .carousel-item img{
+    height: 100%;
+}
+
+.Property-Details-Element-1 .Box #carouselExampleIndicators .carousel-indicators{
+    margin-bottom: 0;
+}
+
+.Property-Details-Element-1 .Box #carouselExampleIndicators .carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #0f4c5c !important;
+}
+
+.Property-Details-Element-1 .Sub-Box{
+    width: 341.5px;
+    height: 100%;
+    padding: 5px;
+}
+
+.Property-Details-Element-1 .Sub-Box .Pic{
+    width: 100%;
+    height: 221px;
+    margin-bottom: 5px;
+    background-position: center center;
+    background-size: cover;
+    transition: 1s;
+    filter: brightness(85%);
+    /* filter: brightness( 100% ) contrast( 105% ) saturate( 110% ) blur( 0px ) hue-rotate( 0deg ); */
+}
+
+.Property-Details-Element-1 .Sub-Box .Pic:hover{
+    transform: scale(.92);
+    filter: brightness( 100% ) contrast( 105% ) saturate( 110% ) blur( 0px ) hue-rotate( 0deg );
+
+}
+
+/* Property-Details-Element-2 */
+.Property-Details-Element-2{
+    width: 100%;
+    height: 753.17px;
+    display: flex;
+    justify-content: center;
+}
+
+.Property-Details-Element-2 section{
+    width: 1140px;
+    height: 100%;
+    display: flex;
+}
+
+.Property-Details-Element-2 section .Box-1{
+    width: 759.98px;
+    height: 100%;
+    padding: 30px;
+}
+
+.Property-Details-Element-2 section .Box-1 .LinkPath{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.Property-Details-Element-2 section .Box-1 .LinkPath a{
+    color: #3C6E71;
+    text-decoration: none;
+}
+
+.Property-Details-Element-2 section .Box-1 .Header{
+    width: 100%;
+    height: 62.39px;
+    font-size: 54px;
+    font-weight: 700;
+    color: rgb(19,59,92);
+    line-height: 62.4px;
+}
+
+.Property-Details-Element-2 section .Box-1 .Place{
+    width: 100%;
+    height: 78.59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 10px 0 10px;
+    color:#797a7e;
+}
+
+.Property-Details-Element-2 section .Box-1 .Price{
+    width: 100%;
+    height: 33.59px;
+    color: rgb(19,59,92);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.Property-Details-Element-2 section .Box-1 .Title{
+    text-decoration: underline;
+    color: rgb(19,59,92);
+    width: 100%;
+    height: 26px;
+    margin-bottom: 26px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.Property-Details-Element-2 section .Box-1 .TableContainer{
+    width: 100%;
+    height: 130.59px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.Property-Details-Element-2 section .Box-1 .TableContainer .Comp{
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 10px;
+}
+
+.Property-Details-Element-2 section .Box-1 .TableContainer .Comp .THeader{
+    width: 100%;
+    height: 16.8px;
+    margin-bottom: 10px;
+    color: #797a7e;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Property-Details-Element-2 section .Box-1 .TableContainer .Comp .THeader-1{
+    width: 100%;
+    height: 16px;
+    color: rgb(65,68,75);
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Property-Details-Element-2 section .Box-1 .Para{
+    width: 100%;
+    height: 72px;
+    color: rgb(65,68,75);
+    margin-bottom: 25px;
+}
+
+.Property-Details-Element-2 section .Box-1 .P-D-Footer{
+    width: 100%;
+    height: 24px;
+    display: flex;
+}
+
+.Property-Details-Element-2 section .Box-1 .P-D-Footer .Elem{
+    width:145.75px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(65,68,75);
+    font-weight: 500;
+}
+
+.Property-Details-Element-2 section .Box-1 .P-D-Footer .Elem i{
+    font-size: 21px; 
+    color: #3C6E71;
+    margin-right: 10px;
+}
+
+.Property-Details-Element-2 section .Box-2{
+    width: calc(100% - 759.97px);
+    height: 100%;
+    padding: 30px;
+}
+
+.Property-Details-Element-2 section .Box-2 .Card{
+    width: 100%;
+    height: 352px;
+    padding: 50px;
+    box-shadow: 0px 2px 5px 0px rgba(15.000000000000007, 76.00000000000004, 92.00000000000007, 0.22);
+    transition: .3s;
+}
+
+.Property-Details-Element-2 section .Box-2 .Card:hover{
+    box-shadow: 0px 2px 15px 0px rgba(15.000000000000007, 76.00000000000004, 92.00000000000007, 0.22);
+}
+
+.Property-Details-Element-2 section .Box-2 .Card .Photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-image: url(Kanye.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.Property-Details-Element-2 section .Box-2 .Card .Name{
+    width: 100%;
+    height: 26px;
+    margin-bottom: 5px;
+}
+
+.Property-Details-Element-2 section .Box-2 .Card .Phno{
+    width: 100%;
+    height: 16px;
+    margin-bottom: 25px;
+}
+
+.Property-Details-Element-2 section .Box-2 .Card .ViewButton{
+    width: 219.19px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Property-Details-Element-2 section .Box-2 .Card .ViewButton .btn{
+    width: 198.48px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Property-Details-Element-2 section .Box-2 .Card .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+/* Property-Details-Element-3 */
+.Property-Details-Element-3{
+    width: 100%;
+    height: 655px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.Property-Details-Element-3 section{
+    width: 1140px;
+    height: 655px;
+    padding: 10px;
+}
+
+.Property-Details-Element-3 section .Map{
+    width: 100%;
+    height: 575px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.Property-Details-Element-3 section .ViewButton{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.Property-Details-Element-3 section .ViewButton .btn{
+    width: 165.56px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Property-Details-Element-3 section .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+/* Agent-Element-1 */
+.Agent-Element-1{
+    width: 100%;
+    height: 316.39px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.Agent-Element-1 section{
+    width: 1166px;
+    height: 316.39px;
+    position: relative;
+}
+
+.Agent-Element-1 section .Pic{
+    width: 100%;
+    height: 100%;
+    background-image: url(PROPERTY/A-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    transition: .7s;
+}
+
+.Agent-Element-1 section .Text{
+    position: absolute;
+    width: 100%;
+    height: 116.39px;
+    top: 105px;
+    padding: 10px 20px 10px 20px;
+}
+
+.Agent-Element-1 section .Text .Piece-1{
+    width: 100%;
+    height: 62.39px;
+    color: rgb(19,59,92);
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 62.4px;
+    margin-bottom: 10px;
+}
+
+.Agent-Element-1 section .Text .LinkPath{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.Agent-Element-1 section .Text .LinkPath a{
+    color: #3C6E71;
+    text-decoration: none;
+}
+
+.Agent-Element-2{
+    width: 100%;
+    height: 791.3px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.Agent-Element-2 section{
+    width: 1140px;
+    height: 100%;
+}
+
+.Agent-Element-2 section .Container{
+    width: 100%;
+    height: 365.56px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.Agent-Element-2 section .Container .Cards{
+    width: calc(100% / 4);
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.Agent-Element-2 section .Container .Cards a .Pic{
+    width: 100%;
+    height: 278.56px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.Agent-Element-2 section .Container .Cards a .Pic .Plus{
+    width: 40px;
+    height: 39px;
+    font-size: 30px;
+    background-color: #3c6e71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+
+.Agent-Element-2 section .Container .Cards a .Pic .Plus:hover{
+    background-color: #133B5C;
+}
+
+.Agent-Element-2 section .Container .Cards a .Pic .Plus i:hover{
+    overflow: hidden;
+    animation: PlusSize .8s ease-in-out infinite;
+}
+
+@keyframes PlusSize{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+} 
+
+.Agent-Details-Element-1{
+    width: 100%;
+    height: 554.52px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.Agent-Details-Element-1 section{
+    width: 1140px;
+    height: 100%;
+    display: flex;
+}
+
+.Agent-Details-Element-1 section .Box-1{
+    width: 379.98px;
+    height: 100%;
+    padding: 15px;
+}
+
+.Agent-Details-Element-1 section .Box-1 .Pic{
+    width: 100%;
+    height: 100%;
+    background-image: url(PROPERTY/A-D-1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.Agent-Details-Element-1 section .Box-2{
+    width: calc(100% - 379.98px);
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.Agent-Details-Element-1 section .Box-2 .Bio{
+    width: 100%;
+    height: auto;
+}
+
+.Agent-Details-Element-1 section .Box-2 .Bio .Content{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 25px;
+}
+
+.Agent-Details-Element-1 section .Box-2 .Bio .ViewButton{
+    width: 219.19px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.Agent-Details-Element-1 section .Box-2 .Bio .ViewButton .btn{
+    width: 171.14px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Agent-Details-Element-1 section .Box-2 .Bio .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+/* Property-Width-Full-Details-Element-1 */
+.Property-Width-Full-Details-Element-1{
+    width: 100%;
+    height: 1440px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1{
+    width: 843.98px;
+    height: 1440px;
+    padding: 20px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1{
+    width: 100%;
+    height: 479px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1 .SlideShow{
+    width: 442.19px;
+    height: auto;
+    padding: 5px;
+}
+
+/* Slide-Show */
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1 .SlideShow .carousel-item img{
+    width: auto;
+    height: 430px;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1 .SlideShow .carousel-indicators{
+    margin-bottom: 0px !important;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1 .SlideShow .carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #0f4c5c !important;
+}
+/* End */
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1 .SubBox{
+    width: calc(100% - 442.19px);
+    height: auto;
+    padding: 5px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1 .SubBox .S-Box{
+    width: 100%;
+    height: 108.55px;
+    margin-bottom: 10px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1 .SubBox .S-Box .Pic{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Sub-E-1 .SubBox .S-Box .Pic:hover{
+    transform: scale(.92);
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1{
+    width: 759.98px;
+    height: auto;
+    padding: 30px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .LinkPath{
+    width: 100%;
+    height: 24px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .LinkPath a{
+    color: #3C6E71;
+    text-decoration: none;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .Header{
+    width: 100%;
+    height: 62.39px;
+    font-size: 54px;
+    font-weight: 700;
+    color: rgb(19,59,92);
+    line-height: 62.4px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .Place{
+    width: 100%;
+    height: 78.59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 10px 0 10px;
+    color:#797a7e;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .Price{
+    width: 100%;
+    height: 33.59px;
+    color: rgb(19,59,92);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .Title{
+    text-decoration: underline;
+    color: rgb(19,59,92);
+    width: 100%;
+    height: 26px;
+    margin-bottom: 26px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .TableContainer{
+    width: 100%;
+    height: 130.59px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .TableContainer .Comp{
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 10px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .TableContainer .Comp .THeader{
+    width: 100%;
+    height: 16.8px;
+    margin-bottom: 10px;
+    color: #797a7e;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .TableContainer .Comp .THeader-1{
+    width: 100%;
+    height: 16px;
+    color: rgb(65,68,75);
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .Para{
+    width: 100%;
+    height: 72px;
+    color: rgb(65,68,75);
+    margin-bottom: 25px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .P-D-Footer{
+    width: 100%;
+    height: 24px;
+    display: flex;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .P-D-Footer .Elem{
+    width:145.75px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(65,68,75);
+    font-weight: 500;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .P-D-Footer .Elem i{
+    font-size: 21px; 
+    color: #3C6E71;
+    margin-right: 10px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .ViewButton{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .ViewButton .btn{
+    width: 149.01px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Property-Width-Full-Details-Element-1 .Sub-1 .Box-1 .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+.Property-Width-Full-Details-Element-1 .Box-2{
+    width: calc(100% - 843.98px);
+    height: 490px;
+    padding: 30px;
+    padding-top: 10px;
+    position: relative;
+}
+
+/* Home-4-Element-1 */
+.Home-4-Element-1{
+    width: 100%;
+    height: 861.81px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px
+}
+
+.Home-4-Element-1 section{
+    width: calc(583px *2);
+    height: 100%;
+    background-image: url(HOME/H4-IMG-1.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Home-4-Element-1 section .PBox{
+    width: 583px;
+    height: 561.81px;
+    padding: 15px;
+}
+
+.Home-4-Element-1 section .PBox .Heading{
+    width: 100%;
+    height: 192px;
+    color: rgb(19,59,92);
+    line-height: 96px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.Home-4-Element-1 section .PBox .Text{
+    height: 48px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.Home-4-Element-1 section .PBox form .me-2{
+    margin-right: 0!important;
+}
+
+.Home-4-Element-1 section .PBox form .form-control{
+    border-radius: 0;
+    height: 85px;
+    box-shadow: 0px 2px 30px 0px rgba(15.000000000000007, 76.00000000000004, 92.00000000000007, 0.11);
+    font-style: italic;
+    color: #797a7e;
+}
+
+.Home-4-Element-1 section .PBox form .btn{
+    width: 195px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 16px;
+}
+
+.Home-4-Element-1 section .PBox form .btn:hover{
+    background-color: #133B5C;
+    border-color: #133B5C;
+}
+
+.Home-4-Element-1 section .PBox form input[type=search]:focus{
+    border:0.8px solid black;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    padding: 0.385rem 0.85rem;
+}
+
+/* Home-4-Element-2 */
+.Home-4-Element-2{
+    width: 100%;
+    height: 206px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.Home-4-Element-2 section{
+    width: 1140px;
+    height: 100%;
+    display: flex;
+}
+
+.Home-4-Element-2 section .Box{
+    width: 50%;
+    height: 100%;
+}
+
+.Home-4-Element-2 section .Box .Text{
+    width: 100%;
+    height: 96px;
+    margin-bottom: 30px;
+    color: rgb(65,68,75);
+}
+
+.Home-4-Element-2 section .Box .ViewButton{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Home-4-Element-2 section .Box .ViewButton .btn{
+    width: 212.69px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.Home-4-Element-2 section .Box .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+/* Home-4-Element-3 */
+.Home-4-Element-3{
+    width: 100%;
+    height: 513.78px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.Home-4-Element-3 section{
+    width: 1140px;
+    height: 100%;
+    padding: 10px;
+}
+
+.Home-4-Element-3 section .PropertyHeader{
+    width: auto;
+    min-height: 112.39px;
+    padding: 20px 0 30px 0;
+    color: #133b5c;
+    font-size: 40px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.Home-4-Element-3 section .RealContainer{
+    width: 100%;
+    height: 381.39px;
+    display: flex;
+}
+
+.Home-4-Element-3 section .RealContainer .RealBox{
+    width: calc(100% / 3);
+    height: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.Home-4-Element-3 section .RealContainer .RealBox a{
+    text-decoration: none;
+}
+
+.Home-4-Element-3 section .RealContainer .RealBox a .Pic{
+    width: 100%;
+    height: 244.8px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.Home-4-Element-3 section .RealContainer .RealBox a .Header{
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgb(19,59,92);
+    font-weight: 500;
+}
+
+.Home-4-Element-3 section .RealContainer .RealBox .Date{
+    width: 100%;
+    height: 15.59px;
+    margin-bottom: 15px;
+    color: #797a7e;
+    font-size: 12px;
+    line-height: 15.6px;
+    font-weight: 500;
+}
+
+/* Property-1  */
+.Property-1{
+    width: 100%;
+    height: 400.55px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.Property-1 section{
+    width: 1120px;
+    height: 400.55px;
+}
+
+.Property-1 section .SearchInfo{
+    position: relative;
+    width: 100%;
+    height: 400.55px;
+    padding: 40px;
+    margin-bottom: 40px;
+    color: rgb(19,59,92);
+    box-shadow: 0px 0px 15px 0px rgba(60.00000000000002, 110.00000000000006, 113.00000000000006, 0.23);
+}
+
+.Property-1 section .SearchInfo .P-Element-1{
+    width: 100%;
+    height: 24.766px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    list-style-type: none;
+}
+
+.Property-1 section .SearchInfo .P-Element-1 li{
+    width: 265.98px;
+    height: 24.766px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Property-1 section .SearchInfo .P-Element-2{
+    width: 100%;
+    height: 80.38px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.Property-1 section .SearchInfo .Box{
+    height: 80.38px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Property-1 section .SearchInfo .Box label{
+    color: #41444b;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5em;
+    height: 24px;
+}
+
+.Property-1 section .SearchInfo .P-Element-2 .Box .form-control{
+    color: #797a7e;
+    border: 2px solid #a6a7ad;
+    font-style: italic;
+    height: 56.39px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 0;
+}
+
+.Property-1 section .SearchInfo .P-Element-2 .Box input[type=search]:focus{
+    border:2.5px solid #797a7e;
+    box-shadow: none;
+    color: #0f4c5c;
+}
+
+.Property-1 section .SearchInfo .P-Element-2 .Box input[type=number]:focus{
+    border:2.5px solid #797a7e;
+    box-shadow: none;
+    color: #0f4c5c;
+}
+
+.Property-1 section .SearchInfo .P-Element-2 .Box input[type=number]:focus::-webkit-inner-spin-button {
+    width: 5px;
+    height: 30px;
+}
+
+.Property-1 section .SearchInfo .P-Element-2 .Box input[type=number]:hover::-webkit-inner-spin-button {  
+    width: 5px;
+    height: 30px;
+}
+
+.Property-1 section .SearchInfo .btn{
+    width: 152.86px;
+    height: 60px;
+    color: white;
+    background-color: #3c6e71;
+    border-radius: 0;
+    border-color: #3c6e71;
+    font-size: 20px;
+    margin-left: 20px;
+    float: right;
+    /* margin-top: 20px; */
+}
+
+.Property-1 section .SearchInfo .btn:hover{
+    border-color: #0f4c5c;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* Property-2  */
+.Property-2{
+    width: 100%;
+    height:calc(859.55px - 112.39px);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.Property-2 section{
+    width: 80%;
+    height:calc(859.55px - 112.39px) ;
+}
+
+.Property-2 section .PropertyHeader{
+    width: auto;
+    min-height: 112.39px;
+    padding: 20px 0 30px 0;
+    color: #133b5c;
+    font-size: 40px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.Property-2 section .Properties{
+    width: auto;
+    height: 747.16px;
+    display: flex;
+}
+
+.Property-2 section .Properties .Property{
+    width: 363.6px;
+    height: 747.16px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.Property-2 section .Properties .Property .PropertyContainer{
+    width: auto;
+    height: 559.969px;
+    padding-bottom: 20px;
+    /* background: transparent; */
+}
+
+.Property-2 section .Properties .Property .PropertyContainer .PropertyImage{
+    background-position: center center;
+    background-size: cover;
+    height: 539.969px;
+    transition: 0.8s;
+}
+
+.Property-2 section .Properties .Property .Price{
+    position:absolute;
+    width: 78.55px;
+    height: 45.59px;
+    background-color: #3c6e71;
+    z-index: 2;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Property-2 section .Properties .Property .AddressLinks{
+    position: absolute;
+    width: 340.94px;
+    height: 30px;
+    bottom: 90px;   
+}
+
+.Property-2 section .Properties .Property .AddressLinks a{
+    text-decoration: none;
+    color: #797a7e;
+    font-size: 16px;
+    display: flex;
+}
+
+.Property-2 section .Properties .Property .PropertyName{
+    position: absolute;
+    text-decoration: none;
+    color: #133b5c;
+    bottom: 45px;
+}
+
+.Property-2 section .Properties .Property .PropertyFooter{
+    position: absolute;
+    width: 340.94px;
+    height: 20px;
+    bottom: 25px;
+}
+
+.Property-2 section .Properties .Property .PropertyFooter ul{
+    list-style-type: none;
+    display: flex ;
+    padding: 0;
+    margin: 0;
+    color: #797a7e;
+}
+
+.Property-2 section .Properties .Property .PropertyFooter ul li{
+margin-right: 30px;
+}
+
+.Property-2 section .Properties .Property .PropertyFooter ul li i{
+    color: #133B5C;
+}
+
+/* Blog */
+.SP-Element-2 section .SP-Box-1 .Cards{
+    width: 100%;
+    height: 377.97px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.SP-Element-2 section .SP-Box-1 .Cards .Pic{
+    width: 279.98px;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(75%);
+    transition: 1s;
+}
+
+.SP-Element-2 section .SP-Box-1 .Cards:hover .Pic{
+    filter: brightness(100%);
+}
+
+
+.SP-Element-2 section .SP-Box-1 .Cards .PicContent{
+    width: calc(100% - 279.98px - 25px);
+    height: 100%;
+    margin-left: 25px;
+}
+
+.SP-Element-2 section .SP-Box-1 .Cards .PicContent a .Header{
+    width: 100%;
+    height: 67.19px;
+    color: rgb(19,59,92);
+    font-size: 28px;
+    line-height: 33.6px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.SP-Element-2 section .SP-Box-1 .Cards .PicContent .Date{
+    width: 100%;
+    height: 15.50px;
+    margin-bottom: 20px;
+    color: #797a7e;
+    font-size: 12px;
+    line-height: 15.6px;
+    font-weight: 400;
+}
+
+.SP-Element-2 section .SP-Box-1 .Cards .PicContent .Text{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    color: #41444b;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.SP-Element-2 section .SP-Box-1 .AFoot{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.SP-Element-2 section .SP-Box-1 .AFoot a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #3C6E71;
+}
+
+/* About-Element-1 */
+.About-Element-1{
+    width: 100%;
+    height: 424.5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.About-Element-1 section{
+    width: 1140px;
+    height: 100%;
+    display: flex;
+}
+
+.About-Element-1 section .AboutBox{
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.About-Element-1 section .AboutBox .Container{
+    width: 100%;
+    height: auto;
+}
+
+.About-Element-1 section .AboutBox .Container .Header{
+    width: 100%;
+    height:100.78px;
+    color: rgb(19,59,92);
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 500;
+    transform: translateY(-50%);
+    transition: 1s;
+}
+
+.About-Element-1 section .AboutBox .Container .Header.active,
+.About-Element-1 section .AboutBox .Container .Text.active,
+.About-Element-1 section .AboutBox .Container .MiniContainers.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.About-Element-1 section .AboutBox .Container .Text{
+    width: 100%;
+    height: 72px;
+    color: rgb(65,68,75);
+    transform: translateY(50%);
+    transition: 1s;
+}
+
+.About-Element-1 section .AboutBox .Container .MiniContainers{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 1s;
+    opacity: 0;
+}
+
+.About-Element-1 section .AboutBox .Container .MiniContainers .Icon{
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.About-Element-1 section .AboutBox .Container .MiniContainers .IconHeading{
+    width: calc(100% - 10px - 46px);
+    height: auto;
+    color: rgb(19,59,92);
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.About-Element-1 section .AboutBox .FirstPart{
+    width: 84.98px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.About-Element-1 section .AboutBox .FirstPart .Cont{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.About-Element-1 section .AboutBox .FirstPart .Cont .PBox{
+    width: 100%;
+    height: 74.98px;
+    margin-bottom: 10px;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.About-Element-1 section .AboutBox .FirstPart .Cont .PBox.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.About-Element-1 section .AboutBox .FirstPart .Cont .PBox .Pic{
+    width: 100%;
+    height:100%;
+    background-position: center center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.About-Element-1 section .AboutBox .FirstPart .Cont .PBox:hover .Pic{
+    transform: scale(.90);
+}
+
+.About-Element-1 section .AboutBox .SecondPart{
+    width:calc(100% - 84.98px);
+    height:100%;
+    padding: 5px;
+}
+
+/* .About-Element-2 */
+.About-Element-2{
+    width: 100%;
+    height: 273.2px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.About-Element-2 a{
+    text-decoration: none;
+}
+
+.About-Element-2 a .Pack{
+    width: 253.19px;
+    height: 100%;
+    overflow: hidden;
+    scale: 0;
+    transition: 1s;
+}
+
+.About-Element-2 a .Pack.active{
+    scale: 1;
+}
+
+.About-Element-2 a .Pack .Pic{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.About-Element-2 a .Pack .Pic .Hue{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.About-Element-2 a .Pack:hover .Pic .Hue{
+    opacity: .5;
+    background-color: #3C6E71;
+}
+
+.About-Element-2 a .Pack:hover .Pic{
+    transform:scale(1.1);
+}
+
+.About-Element-2 a .Pack .Pic .Text{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: -55%;
+    text-align: center;
+    opacity: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+.About-Element-2 a .Pack:hover .Pic .Text{
+    opacity: 1;
+}
+
+/* About-Element-3 */
+.About-Element-3{
+    width: 100%;
+    height: 808.78px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.About-Element-3 section{
+    width: 1140px;
+    height: 100%;
+    padding: 10px;
+}
+
+.About-Element-3 section .Header{
+    width: 100%;
+    height: 124.78px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(19,59,92);
+    font-size: 52px;
+    line-height: 62.4px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: 1s;
+}
+
+.About-Element-3 section .Header.active,
+.About-Element-3 section .Text.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.About-Element-3 section .Text{
+    width: 100%;
+    height: 72px;
+    margin-bottom: 40px;
+    color: rgb(65,68,75);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: 2.5s;
+}
+
+.About-Element-3 section .sec{
+    width: 100%;
+    height: 502px;
+    position: relative;
+}
+
+.About-Element-3 section .sec.active{
+    animation: SPAN 2s ease;
+}
+
+@keyframes SPAN {
+    0%{
+        transform:scale(0) ;
+    }
+    90%{
+        transform:scale(1.1) ;
+    }
+
+    100%{
+        transform:scale(1) ;
+    }
+}
+/* .Home-2-Element-4 section div{
+    border: 1px solid red;
+} */
+
+.About-Element-3 section .sec .Pic{
+    width: 100%;
+    height: 100%;
+    background-image: url(ABOUT/Table.jpg);
+    background-position: center center;
+    background-size: cover;
+    transition: 0.2s;
+}
+
+.About-Element-3 section .sec .PauseButton{
+    position: absolute;
+    width: 110px;
+    height: 102px;
+    top: 45%;
+    left: 45%;
+}
+
+.About-Element-3 section .sec .PauseButton .Circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.4;
+}
+
+.About-Element-3 section .sec .PauseButton .Circle:hover{
+    opacity: 0.7;
+}
+
+.About-Element-3 section .sec .PauseButton .Pause{
+    width: 45px;
+    height: 45px;
+    margin-top: -72px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-Element-3 section .sec .PauseButton .Pause a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(16,110,113);
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-Element-3 section .sec .PauseButton .Pause a i{
+    font-size: 90px;
+    transition: 0.2s;
+}
+
+.About-Element-3 section .sec .PauseButton .Pause a:hover i{
+    transform: scale(1.1);
+    color: #797a7e;
+}
+
+.About-Element-4{
+    width: 100%;
+    height: 515.56px;
+    margin-bottom: 120px;
+    display: flex;
+}
+
+.About-Element-4 .Box-1{
+    width: 341.5px;
+    height: 100%;
+    margin-left: 341.5px;
+    padding: 10px;
+}
+
+.About-Element-4 .Box-1 .Heading{
+    width: 100%;
+    height: 249.56px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color:rgb(19,59,92);
+    font-size: 52px;
+    line-height: 62.5px;
+    font-weight: 500;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.About-Element-4 .Box-1 .Heading.active,
+.About-Element-4 .Box-1 .Text.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.About-Element-4 .Box-1 .Text{
+    width: 100%;
+    height: 96px;
+    margin-bottom: 40px;
+    color: rgb(65,68,75);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 2s;
+}
+
+.About-Element-4 .Box-1 .ViewButton{
+    width: 212.69px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-Element-4 .Box-1 .ViewButton .btn{
+    width: 212.69px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.About-Element-4 .Box-1 .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+.About-Element-4 .Box-2{
+    width: calc(100% - 341.5px - 341.5px);
+    height: 100%;
+    padding: 10px;
+}
+
+.About-Element-4 .Box-2 #carouselExampleIndicators .carousel-inner .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+
+.About-Element-4 .Box-2 #carouselExampleIndicators .carousel-inner .carousel-item img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.About-Element-4 .Box-2 #carouselExampleIndicators .carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #0f4c5c !important;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.About-Element-5{
+    width: 100%;
+    height:calc(611.3px) ;
+    margin-bottom: 120px;
+}
+
+.About-Element-5 section{
+    width: 1140px;
+    height: 100%;
+}
+
+.About-Element-5 section .Header{
+    width: 100%;
+    height: 62.39px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgb(19,59,92);
+    font-size: 52px;
+    line-height: 62.4px;
+    font-weight: 500;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.About-Element-5 section .Header.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.About-Element-5 section .Container{
+    width: 100%;
+    height: 365.56px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.About-Element-5 section .Container .Cards{
+    width: calc(100% / 4);
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.About-Element-5 section .Container .Cards .Name{
+    scale: 0;
+    transition: 1s;
+}
+
+.About-Element-5 section .Container .Cards .Phno{
+    scale: 0;
+    transition: 1s;
+}
+
+.About-Element-5 section .Container .Cards a .Pic:hover{
+    transform: translateY(2%);
+    filter: brightness(100%) contrast(100%) saturate(145%);
+}
+
+.About-Element-5 section .Container .Cards a .Pic{
+    width: 100%;
+    height: 278.56px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    filter: brightness(90%);
+    scale: 0;
+    transition: 1s;
+}
+
+.About-Element-5 section .Container .Cards a .Pic.active,
+.About-Element-5 section .Container .Cards .Name.active,
+.About-Element-5 section .Container .Cards .Phno.active,
+.About-Element-5 section .Container .Cards a .Pic .Plus.active{
+    scale: 1;
+}
+
+.About-Element-5 section .Container .Cards a .Pic .Plus{
+    width: 40px;
+    height: 39px;
+    font-size: 30px;
+    background-color: #3c6e71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    scale: 0;
+}
+
+.About-Element-5 section .Container .Cards a .Pic .Plus:hover{
+    background-color: #133B5C;
+}
+
+.About-Element-5 section .Container .Cards a .Pic .Plus i:hover{
+    overflow: hidden;
+    animation: PlusSize .8s ease-in-out infinite;
+}
+
+@keyframes PlusSize{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+} 
+
+.About-Element-5 section .ViewButton{
+    width: 169.4px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-Element-5 section .ViewButton .btn{
+    width: 169.4px;
+    height: 60px;
+    border-radius: 0;
+    font-size: 20px;
+    background-color: #3C6E71;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.About-Element-5 section .btn:hover{
+    transform: scale(0.9);
+    background-color: #0F4C5C;
+}
+
+
+
+
