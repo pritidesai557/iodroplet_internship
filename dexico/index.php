@@ -1,7 +1,7 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 <?php 
   // echo get_template_directory_uri();
-  bloginfo('template_directory');
+  // bloginfo('template_directory');
 ?>
 
 <!DOCTYPE html>
@@ -34,24 +34,24 @@
       <nav class="navbar bg-body-tertiary" style="width: 80%;">
           <div class="container-nav">
             <div class="LogoName" style="min-width: 190px;min-height: 45px;">
-              <a href="index.html">dexico.</a>
+              <a href="<?php bloginfo('template_directory') ?>/index.html">dexico.</a>
             </div>
             <div class="NavLinks" style="width: 85%;min-height: 100%;">
               <ul>
-                <li><a href="index.html" style="color: #3c6e71; text-decoration: none;">home<i class='bx bx-plus'></i></a>
+                <li><a href="<?php bloginfo('template_directory') ?>/index.html" style="color: #3c6e71; text-decoration: none;">home<i class='bx bx-plus'></i></a>
                   <div class="dropdown-content">
-                    <a href="HOME/Home-2.html">Home 2</a>
-                    <a href="HOME/Home-3.html">Home 3</a>
-                    <a href="HOME/Home-4.html">Home 4</a>
+                    <a href="<?php bloginfo('template_directory') ?>/HOME/Home-2.html">Home 2</a>
+                    <a href="<?php bloginfo('template_directory') ?>/HOME/Home-3.html">Home 3</a>
+                    <a href="<?php bloginfo('template_directory') ?>/HOME/Home-4.html">Home 4</a>
                   </div>
                 </li>
-                <li><a href="PROPERTY/Property.html" style="color: #3c6e71; text-decoration: none;">property<i class='bx bx-plus'></i></a>
+                <li><a href="<?php bloginfo('template_directory') ?>/PROPERTY/Property.html" style="color: #3c6e71; text-decoration: none;">property<i class='bx bx-plus'></i></a>
                   <div class="dropdown-content">
-                    <a href="PROPERTY/Property-List.html">Property List</a>
-                    <a href="PROPERTY/Property-Details.html">Property Details</a>
-                    <a href="PROPERTY/Property-Width-Full-Details.html">Property Details Full Width</a>
-                    <a href="PROPERTY/Agents.html">Agents</a> 
-                    <a href="PROPERTY/Agent-Details.html">Agents Details</a>
+                    <a href="<?php bloginfo('template_directory') ?>/PROPERTY/Property-List.html">Property List</a>
+                    <a href="<?php bloginfo('template_directory') ?>/PROPERTY/Property-Details.html">Property Details</a>
+                    <a href="<?php bloginfo('template_directory') ?>/PROPERTY/Property-Width-Full-Details.html">Property Details Full Width</a>
+                    <a href="<?php bloginfo('template_directory') ?>/PROPERTY/Agents.html">Agents</a> 
+                    <a href="<?php bloginfo('template_directory') ?>/PROPERTY/Agent-Details.html">Agents Details</a>
                   </div>
                 </li>
                 <li><a href="ABOUT/About.html" style="color: #3c6e71; text-decoration: none;">about<i class='bx bx-plus'></i></a>
@@ -179,7 +179,7 @@
         <div class="Properties">
           <div class="Property">
             <div class="PropertyContainer">
-              <div class="PropertyImage" style="background-image:url(Room1.jpg) ;"></div>
+              <div class="PropertyImage" style="background-image:url(<?php bloginfo('template_directory') ?>/Room1.jpg) ;"></div>
             </div>
             <div class="Price">$765</div>
             <div class="AddressLinks">
@@ -198,7 +198,7 @@
           </div>
           <div class="Property">
             <div class="PropertyContainer">
-              <div class="PropertyImage" style="background-image:url(Room2.jpg) ;"></div>
+              <div class="PropertyImage" style="background-image:url(<?php bloginfo('template_directory') ?>/Room2.jpg) ;"></div>
             </div>
             <div class="Price">$789</div>
             <div class="AddressLinks">
@@ -217,7 +217,7 @@
           </div>
           <div class="Property">
             <div class="PropertyContainer">
-              <div class="PropertyImage" style="background-image:url(Room3.jpg) ;"></div>
+              <div class="PropertyImage" style="background-image:url(<?php bloginfo('template_directory') ?>/Room3.jpg) ;"></div>
             </div>
             <div class="Price">$341</div>
             <div class="AddressLinks">
@@ -257,19 +257,19 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active" style="object-fit: cover;">
-                  <img src="Slide4.jpg" class="d-block w-100" alt="...">
+                  <img src="<?php bloginfo('template_directory') ?>/Slide4.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" style="height: 359.72px;">
-                  <img src="Slide1.jpg" class="d-block w-100" alt="..." style="object-fit: fill;">
+                  <img src="<?php bloginfo('template_directory') ?>/Slide1.jpg" class="d-block w-100" alt="..." style="object-fit: fill;">
                 </div>
                 <div class="carousel-item">
-                  <img src="Room3.jpg" class="d-block w-100" alt="...">
+                  <img src="<?php bloginfo('template_directory') ?>/Room3.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" style="height: 359.72px;">
-                  <img src="Slide2.jpg" class="d-block w-100" alt="..." style="object-fit: fill;">
+                  <img src="<?php bloginfo('template_directory') ?>/Slide2.jpg" class="d-block w-100" alt="..." style="object-fit: fill;">
                 </div>
                 <div class="carousel-item">
-                  <img src="Slide3.jpg" class="d-block w-100" alt="...">
+                  <img src="<?php bloginfo('template_directory') ?>/Slide3.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
             </div>
@@ -294,7 +294,7 @@
     <div class="FifthSegmnet">
       <section>
         <div id="FirstPic">
-          <img id="inner" src="Building1.jpg" alt="">
+          <img id="inner" src="<?php bloginfo('template_directory') ?>/Building1.jpg" alt="">
         </div>
         <div class="Content-1">
           <div class="Title">Something About Our Company</div>
@@ -313,7 +313,7 @@
               <div class="SubTitle">Best Propertys</div>
             </div>
           </div>
-          <img src="Building2.jpg" alt="avatar">
+          <img src="<?php bloginfo('template_directory') ?>/Building2.jpg" alt="avatar">
         </div>
       </section>
     </div>
@@ -334,7 +334,7 @@
               <div class="carousel-item active" align="center">
                 <div class="d-block Special">Home building’s 2020 sling-shot trajectory—coming as it did amidst the shock and stress of the pandemic—defied gravity. It’s one of American business and society’s few feel-good stories in a bleak, topsy-turvy backdrop.</div>
                 <div class="carousel-caption d-none d-md-block">
-                  <div class="SlideImage" style="background-image: url(Kanye.jpg);"></div>
+                  <div class="SlideImage" style="background-image: url(<?php bloginfo('template_directory') ?>/Kanye.jpg);"></div>
                   <h5>KANYE WEST</h5>
                   <p>happy client</p>
                 </div>
@@ -342,7 +342,7 @@
               <div class="carousel-item" align="center">
                 <div class="d-block Special">Looking for Hamptons pool days? How about a home right by the beach? No matter what you’re looking for, you’ll find it on Out East — a beautiful new way to find a home in the Hamptons.</div>
                 <div class="carousel-caption d-none d-md-block">
-                  <div class="SlideImage" style="background-image: url(Ana.jpg);"></div>
+                  <div class="SlideImage" style="background-image: url(<?php bloginfo('template_directory') ?>/Ana.jpg);"></div>
                   <h5>ANNA KEY</h5>
                   <p>happy client</p>
                 </div>
@@ -350,7 +350,7 @@
               <div class="carousel-item" align="center">
                 <div class="d-block Special">An upside, still-widening consensus hypothesis of a housing-led broad economic recovery has taken meaningful hold of sentiment in the buyer-seller arena where it matters most—money for land.</div>                
                 <div class="carousel-caption d-none d-md-block">
-                  <div class="SlideImage" style="background-image: url(Lionel.jpg);"></div>
+                  <div class="SlideImage" style="background-image: url(<?php bloginfo('template_directory') ?>/Lionel.jpg);"></div>
                   <h5>Lionel Messi</h5>
                   <p>happy client</p>
                 </div>
