@@ -87,7 +87,7 @@ section nav .container-nav .LogoName a:hover{
     font-size: 25px;
 }
 
-section nav .container-nav .NavLinks ul{
+section nav .container-nav .NavLinks #menu-header-menu{
     display: flex;
     justify-content: space-evenly;
     align-items:center;
@@ -96,14 +96,26 @@ section nav .container-nav .NavLinks ul{
     height: 100%;
 }
 
-section nav .container-nav .NavLinks ul{
+section nav .container-nav .NavLinks #menu-header-menu li{
     position: relative;
     color: #3C6E71;
     text-transform: uppercase;
 }
 
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+/* section nav .container-nav .NavLinks #menu-header-menu li a{
+    color: #3c6e71;
+    text-decoration: none;
+} */
+
 /* Drop-Down */
-section nav .container-nav .NavLinks ul li .dropdown-content {
+section nav .container-nav .NavLinks ul li .dropdown-content{
+    margin-right: 0;
+    padding: 0;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -112,7 +124,15 @@ section nav .container-nav .NavLinks ul li .dropdown-content {
     z-index: 1;
   }
 
-section nav .container-nav .NavLinks ul li .dropdown-content a {
+section nav .container-nav .NavLinks ul li .dropdown-content li{
+    width: 100%;
+}
+
+#menu-item-32 ul{
+    width: 237px;
+}
+
+section nav .container-nav .NavLinks ul li .dropdown-content li a{
     font-size: 15px;
     color: #0F4C5C;
     background-color: white;
@@ -127,13 +147,16 @@ section nav .container-nav .NavLinks ul li .dropdown-content hr{
     margin: 0;
 }
 
-section nav .container-nav .NavLinks .dropdown-content a:hover {
+section nav .container-nav .NavLinks ul li .dropdown-content li a:hover{
     background-color: #0F4C5C;
     color:white
+
 }
 
-section nav .container-nav .NavLinks li:hover .dropdown-content {
+section nav .container-nav .NavLinks ul li:hover .dropdown-content {
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 section nav .container-nav .NavLinks li{
