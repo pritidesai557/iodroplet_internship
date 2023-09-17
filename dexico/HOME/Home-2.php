@@ -1,95 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Bootstrap CSS file -->
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
-<body>
-
-    <!-- Preview Header  -->
-    <div class="PreviewHeader" style="position: sticky;top: 0; z-index: 5;">
-      <div class="logo">
-        <a href="#"><i class='bx bxs-hot'></i><span>envato</span>market</a>
-      </div>
-      <div class="BuyAction">
-        <button type="button" class="btn btn-success">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Navbar  -->
-    <section style="top: 54px; width: 1366px; height: 97px; display: flex; justify-content: center;padding: 20px 0px 20px 0px;z-index: 5; background-color: white;border-bottom: 1px solid black;">
-        <nav class="navbar bg-body-tertiary" style="width: 80%;">
-            <div class="container-nav">
-              <div class="LogoName" style="min-width: 190px;min-height: 45px;">
-                <a href="../index.php">dexico.</a>
-              </div>
-              <div class="NavLinks" style="width: 85%;min-height: 100%;">
-                <ul>
-                  <li><a href="../index.php" style="color: #3c6e71; text-decoration: none;">home<i class='bx bx-plus'></i></a>
-                    <div class="dropdown-content">
-                      <a href="../HOME/Home-2.html">Home 2</a>
-                      <a href="../HOME/Home-3.html">Home 3</a>
-                      <a href="#">Home 4</a>
-                    </div>
-                  </li>
-                  <li><a href="../PROPERTY/Property.html" style="color: #3c6e71; text-decoration: none;">property<i class='bx bx-plus'></i></a>
-                    <div class="dropdown-content">
-                      <a href="../PROPERTY/Property-List.html">Property List</a>
-                      <a href="../PROPERTY/Property-Details.html">Property Details</a>
-                      <a href="../PROPERTY/Property-Width-Full-Details.html">Property Details Full Width</a>
-                      <a href="../PROPERTY/Agents.html">Agents</a> 
-                      <a href="../PROPERTY/Agent-Details.html">Agents Details</a>
-                    </div>
-                  </li>
-                  <li><a href="../ABOUT/About.html" style="color: #3c6e71; text-decoration: none;">about<i class='bx bx-plus'></i></a>
-                    <div class="dropdown-content">
-                      <a href="../ABOUT/404.html">404</a>
-                    </div>
-                  </li>
-                  <li><a href="../BLOG/Blog.html" style="color: #3c6e71; text-decoration: none;">blog<i class='bx bx-plus'></i></a>
-                    <div class="dropdown-content">
-                      <a href="../BLOG/SinglePost.html">Single Post</a>
-                      </div>
-                  </li>
-                  <li><a href="../Contacts.html" style="color: #3c6e71; text-decoration: none;">contacts</a></li>
-                </ul>
-              </div>
-              <!-- Off-Canvas -->
-              <button class="btn btn-primary OffCanvaBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-align-right'></i></button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 600px; padding: 54px 20px 30px 20px;">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body" align="center">
-                  <div class="InsideCanvas" style="color: #133b5c;">
-                    <h1 style="font-family: 'Gothic A1', Sans-serif;font-size: 47px;font-weight: 543;line-height: 1.3em;">Let's be Together</h1>
-                    <div class="gmap" style="width: 480px;height: 340px; margin-bottom: 40px; margin-top: 30px;">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317893.9737282887!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1691729805369!5m2!1sen!2sus" width="478" height="338" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="ContactsDetails">
-                      <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-map' style="margin-right:10px;font-size: 30px;margin-top: 5px;color: #3C6E71;"></i>LA, Vehiclua Street, 58</a></h6>
-                      <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-phone' style="margin-right:10px;font-size: 30px;margin-bottom: 5px;color: #3C6E71;"></i>+91 1234567890</a></h6>
-                      <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-envelope' style="margin-right:10px;font-size: 30px;margin-bottom: 5px;color: hsl(191, 77%, 12%);"></i>hello@merkulov.design</a></h6>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="SocialMedia" style="width: 230px;height: 40px;font-size: 35px;">
-                      <a href=""><i class='bx bxl-twitter' style="color: #3C6E71;margin-right: 5px;"></i></a>
-                      <a href=""><i class='bx bxl-facebook' style="color: #3C6E71;margin-right: 5px;"></i></a>
-                      <a href=""><i class='bx bxl-instagram' style="color: #3C6E71;"></i></a>  
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </nav>
-    </section>
+<?php 
+  /* Template Name: Home 2 */
+  // <?php bloginfo('template_directory');
+  get_header();
+?>
 
     <!-- Home-2-Element-1 -->
     <div class="Home-2-Element-1">
@@ -153,7 +66,7 @@
           <div class="PButton">
             <button class="btn btn-primary" type="button">− Propertys</button>
           </div>
-          <div class="BoxPic" style="height: 471.19px;background-image: url(H2-IMG-3.jpg);">
+          <div class="BoxPic" style="height: 471.19px;background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-3.jpg);">
             <div class="PFooter">
               <div class="Header">Traditional 4 Rooms Apartments</div>
               <div class="PropertyFooter">
@@ -165,7 +78,7 @@
               </div>
             </div>
           </div>
-          <div class="BoxPic" style="height: 671.19px;background-image: url(H2-IMG-4.jpg);">
+          <div class="BoxPic" style="height: 671.19px;background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-4.jpg);">
             <div class="PFooter">
               <div class="Header">Traditional 4 Rooms Apartments</div>
               <div class="PropertyFooter">
@@ -179,7 +92,7 @@
           </div>
         </div>
         <div class="ApartmentBox">
-          <div class="BoxPic" style="height: 621.19px;background-image: url(H2-IMG-5.jpg);">
+          <div class="BoxPic" style="height: 621.19px;background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-5.jpg);">
             <div class="PFooter">
               <div class="Header">Traditional 4 Rooms Apartments</div>
               <div class="PropertyFooter">
@@ -191,7 +104,7 @@
               </div>
             </div>
           </div>
-          <div class="BoxPic" style="height: 521.19px;background-image: url(H2-IMG-6.jpg);">
+          <div class="BoxPic" style="height: 521.19px;background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-6.jpg);">
             <div class="PFooter">
               <div class="Header">Traditional 4 Rooms Apartments</div>
               <div class="PropertyFooter">
@@ -231,27 +144,27 @@
         <div class="Header"><p style="margin-bottom: 0;">Apartment With</p>Different Approach</div>
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(../HOME/H2-IMG-9.jpg);"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(../HOME/H2-IMG-10.jpg);"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(../HOME/H2-IMG-11.jpg);"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4" style="background-image: url(../HOME/H2-IMG-12.jpg);"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5" style="background-image: url(../HOME/H2-IMG-13.jpg);"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-9.jpg);"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-10.jpg);"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-11.jpg);"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4" style="background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-12.jpg);"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5" style="background-image: url(<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-13.jpg);"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="../HOME/H2-IMG-9.jpg" class="d-block w-100" alt="...">
+              <img src="<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-9.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="../HOME/H2-IMG-10.jpg" class="d-block w-100 img-size" alt="...">
+              <img src="<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-10.jpg" class="d-block w-100 img-size" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../HOME/H2-IMG-11.jpg" class="d-block w-100 img-size" alt="...">
+              <img src="<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-11.jpg" class="d-block w-100 img-size" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../HOME/H2-IMG-12.jpg" class="d-block w-100 img-size" alt="...">
+              <img src="<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-12.jpg" class="d-block w-100 img-size" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../HOME/H2-IMG-13.jpg" class="d-block w-100 img-size" alt="...">
+              <img src="<?php bloginfo('template_directory'); ?>/HOME/H2-IMG-13.jpg" class="d-block w-100 img-size" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" style="justify-content: flex-start;">

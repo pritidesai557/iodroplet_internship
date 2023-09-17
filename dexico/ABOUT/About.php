@@ -1,95 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Bootstrap CSS file -->
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
-<body>
-
-    <!-- Preview Header  -->
-    <div class="PreviewHeader" style="position: sticky;top: 0; z-index: 5;">
-      <div class="logo">
-        <a href="#"><i class='bx bxs-hot'></i><span>envato</span>market</a>
-      </div>
-      <div class="BuyAction">
-        <button type="button" class="btn btn-success">Buy Now</button>
-      </div>
-    </div>
-
-    <!-- Navbar  -->
-    <section style="position: sticky; top: 54px; width: 1366px; height: 97px; display: flex; justify-content: center;padding: 20px 0px 20px 0px;z-index: 5; background-color: white;">
-        <nav class="navbar bg-body-tertiary" style="width: 80%;">
-            <div class="container-nav">
-              <div class="LogoName" style="min-width: 190px;min-height: 45px;">
-                <a href="../index.php">dexico.</a>
-              </div>
-              <div class="NavLinks" style="width: 85%;min-height: 100%;">
-                <ul>
-                  <li><a href="../index.php" style="color: #3c6e71; text-decoration: none;">home<i class='bx bx-plus'></i></a>
-                    <div class="dropdown-content">
-                      <a href="../HOME/Home-2.html">Home 2</a>
-                      <a href="../HOME/Home-3.html">Home 3</a>
-                      <a href="../HOME/Home-4.html">Home 4</a>
-                    </div>
-                  </li>
-                  <li><a href="../PROPERTY/Property.html" style="color: #3c6e71; text-decoration: none;">property<i class='bx bx-plus'></i></a>
-                    <div class="dropdown-content">
-                      <a href="../PROPERTY/Property-List.html">Property List</a>
-                      <a href="../PROPERTY/Property-Details.html">Property Details</a>
-                      <a href="../PROPERTY/Property-Width-Full-Details.html">Property Details Full Width</a>
-                      <a href="../PROPERTY/Agents.html">Agents</a> 
-                      <a href="../PROPERTY/Agent-Details.html">Agents Details</a>
-                    </div>
-                  </li>
-                  <li><a href="../ABOUT/About.html" style="color: #3c6e71; text-decoration: none;">about<i class='bx bx-plus'></i></a>
-                    <div class="dropdown-content">
-                      <a href="../ABOUT/404.html">404</a>
-                    </div>
-                  </li>
-                  <li><a href="../BLOG/Blog.html" style="color: #3c6e71; text-decoration: none;">blog<i class='bx bx-plus'></i></a>
-                    <div class="dropdown-content">
-                      <a href="../BLOG/SinglePost.html">Single Post</a>
-                      </div>
-                  </li>
-                  <li><a href="../Contacts.html" style="color: #3c6e71; text-decoration: none;">contacts</a></li>
-                </ul>
-              </div>
-              <!-- Off-Canvas -->
-              <button class="btn btn-primary OffCanvaBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-align-right'></i></button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 600px; padding: 54px 20px 30px 20px;">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body" align="center">
-                  <div class="InsideCanvas" style="color: #133b5c;">
-                    <h1 style="font-family: 'Gothic A1', Sans-serif;font-size: 47px;font-weight: 543;line-height: 1.3em;">Let's be Together</h1>
-                    <div class="gmap" style="width: 480px;height: 340px; margin-bottom: 40px; margin-top: 30px;">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317893.9737282887!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1691729805369!5m2!1sen!2sus" width="478" height="338" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="ContactsDetails">
-                      <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-map' style="margin-right:10px;font-size: 30px;margin-top: 5px;color: #3C6E71;"></i>LA, Vehiclua Street, 58</a></h6>
-                      <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-phone' style="margin-right:10px;font-size: 30px;margin-bottom: 5px;color: #3C6E71;"></i>+91 1234567890</a></h6>
-                      <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-envelope' style="margin-right:10px;font-size: 30px;margin-bottom: 5px;color: hsl(191, 77%, 12%);"></i>hello@merkulov.design</a></h6>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="SocialMedia" style="width: 230px;height: 40px;font-size: 35px;">
-                      <a href=""><i class='bx bxl-twitter' style="color: #3C6E71;margin-right: 5px;"></i></a>
-                      <a href=""><i class='bx bxl-facebook' style="color: #3C6E71;margin-right: 5px;"></i></a>
-                      <a href=""><i class='bx bxl-instagram' style="color: #3C6E71;"></i></a>  
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </nav>
-    </section>
+<?php 
+  /* Template Name: About */
+  // <?php bloginfo('template_directory');
+  get_header();
+?>
 
     <!-- Agent-Element-1 -->
     <div class="Agent-Element-1">
@@ -114,16 +27,16 @@
             <div class="AboutBox">
                 <div class="Container">
                     <div class="MiniContainers">
-                        <div class="Icon" style="background-image: url(../ABOUT/Icon-1.png);"></div>
+                        <div class="Icon" style="background-image: url(<?php bloginfo('template_directory'); ?>/ABOUT/Icon-1.png);"></div>
                         <div class="IconHeading">
                             We help you find a new home by offering a smart real estate experience​</div>
                     </div>
                     <div class="MiniContainers">
-                        <div class="Icon" style="background-image: url(../ABOUT/Icon-2.png);"></div>
+                        <div class="Icon" style="background-image: url(<?php  bloginfo('template_directory'); ?>/ABOUT/Icon-2.png);"></div>
                         <div class="IconHeading">Find an experienced agent who knows your market best</div>
                     </div>
                     <div class="MiniContainers">
-                        <div class="Icon" style="background-image: url(../ABOUT/Icon-3.png);"></div>
+                        <div class="Icon" style="background-image: url(<?php  bloginfo('template_directory'); ?>/ABOUT/Icon-3.png);"></div>
                         <div class="IconHeading">Millions of houses and apartments in your favourite cities</div>
                     </div>
                 </div>
@@ -132,13 +45,13 @@
               <div class="FirstPart">
                 <div class="Cont">
                   <div class="PBox" style="transition: .7s;">
-                    <div class="Pic" style="background-image: url(../PROPERTY/P-3.jpg);"></div>
+                    <div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/PROPERTY/P-3.jpg);"></div>
                   </div>
                   <div class="PBox" style="transition: .9s;">
-                    <div class="Pic" style="background-image: url(../Room2.jpg);"></div>
+                    <div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/Room2.jpg);"></div>
                   </div>
                   <div class="PBox" style="transition: 1.1s;">
-                    <div class="Pic" style="background-image: url(../Room3.jpg);"></div>
+                    <div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/Room3.jpg);"></div>
                   </div>
                 </div>
               </div>
@@ -146,13 +59,13 @@
                 <div id="carouselExample" class="carousel slide" style="height: 100%" data-bs-ride="carousel">
                   <div class="carousel-inner" style="height: 100%">
                     <div class="carousel-item active" style="height: 100%">
-                      <img src="../ABOUT/About-ss-1.jpg" class="d-block w-100" alt="..." style="height: 100%;object-position: center center;object-fit: cover;">
+                      <img src="<?php  bloginfo('template_directory'); ?>/ABOUT/About-ss-1.jpg" class="d-block w-100" alt="..." style="height: 100%;object-position: center center;object-fit: cover;">
                     </div>
                     <div class="carousel-item" style="height: 100%">
-                      <img src="../ABOUT/About-ss-2.jpg" class="d-block w-100" alt="..." style="height: 100%;object-position: center center;object-fit: cover;">
+                      <img src="<?php  bloginfo('template_directory'); ?>/ABOUT/About-ss-2.jpg" class="d-block w-100" alt="..." style="height: 100%;object-position: center center;object-fit: cover;">
                     </div>
                     <div class="carousel-item" style="height: 100%">
-                      <img src="../ABOUT/About-ss-3.jpg" class="d-block w-100" alt="..." style="height: 100%;object-position: center center;object-fit: cover;">
+                      <img src="<?php  bloginfo('template_directory'); ?>/ABOUT/About-ss-3.jpg" class="d-block w-100" alt="..." style="height: 100%;object-position: center center;object-fit: cover;">
                     </div>
                   </div>
                 </div>
@@ -165,7 +78,7 @@
     <div class="About-Element-2">
       <a href="">
         <div class="Pack">
-          <div class="Pic" style="background-image: url(../ABOUT/About-Pic-1.jpg);">
+          <div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/ABOUT/About-Pic-1.jpg);">
             <div class="Hue"></div>
             <div class="Text">Sunny Property</div>
           </div>
@@ -173,7 +86,7 @@
       </a>
       <a href="">
         <div class="Pack">
-          <div class="Pic" style="background-image: url(../ABOUT/About-Pic-2.jpg);">
+          <div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/ABOUT/About-Pic-2.jpg);">
             <div class="Hue"></div>
             <div class="Text">Perfect Tools</div>
           </div>
@@ -181,7 +94,7 @@
       </a>
       <a href="">
         <div class="Pack">
-          <div class="Pic" style="background-image: url(../ABOUT/About-Pic-3.jpg);">
+          <div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/ABOUT/About-Pic-3.jpg);">
             <div class="Hue"></div>
             <div class="Text">Search in Click</div>
           </div>
@@ -189,7 +102,7 @@
       </a>
       <a href="">
         <div class="Pack">
-          <div class="Pic" style="background-image: url(../ABOUT/About-Pic-4.jpg);">
+          <div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/ABOUT/About-Pic-4.jpg);">
             <div class="Hue"></div>
             <div class="Text">Perfect Place</div>
           </div>
@@ -197,7 +110,7 @@
       </a>
       <a href="">
         <div class="Pack">
-          <div class="Pic" style="background-image: url(../ABOUT/About-Pic-5.jpg);">
+          <div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/ABOUT/About-Pic-5.jpg);">
             <div class="Hue"></div>
             <div class="Text">Explore Features</div>
           </div>
@@ -244,19 +157,19 @@
             </div>
             <div class="carousel-inner" style="height: 94%;">
               <div class="carousel-item active">
-                <img src="../Slide4.jpg" class="d-block w-100" alt="...">
+                <img src="<?php  bloginfo('template_directory'); ?>/Slide4.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="../Slide1.jpg" class="d-block w-100" alt="..." style="object-fit: fill;">
+                <img src="<?php  bloginfo('template_directory'); ?>/Slide1.jpg" class="d-block w-100" alt="..." style="object-fit: fill;">
               </div>
               <div class="carousel-item">
-                <img src="../Room3.jpg" class="d-block w-100" alt="...">
+                <img src="<?php  bloginfo('template_directory'); ?>/Room3.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="../Slide2.jpg" class="d-block w-100" alt="..." style="object-fit: fill;">
+                <img src="<?php  bloginfo('template_directory'); ?>/Slide2.jpg" class="d-block w-100" alt="..." style="object-fit: fill;">
               </div>
               <div class="carousel-item">
-                <img src="../Slide3.jpg" class="d-block w-100" alt="...">
+                <img src="<?php  bloginfo('template_directory'); ?>/Slide3.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
           </div>
@@ -271,28 +184,28 @@
         <div class="Header">Real Estate Agents</div>
         <div class="Container">
           <div class="Cards">
-              <a href="" style="text-decoration: none;"><div class="Pic" style="background-image: url(../PROPERTY/Agent-1.jpg);">
+              <a href="" style="text-decoration: none;"><div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/PROPERTY/Agent-1.jpg);">
                   <div class="Plus"><i class='bx bx-plus' style='color:#ffffff' ></i></div>
               </div></a>
               <div class="Name"><a href="#" style="text-decoration: none;color: rgb(19,59,92);font-size: 22px;font-weight: 400;">Polina Podolski</a></div>
               <div class="Phno"><a href="#" style="text-decoration: none;color: rgb(65,68,75)"><b>+ 123 456 789</b></a></div>
           </div>
           <div class="Cards">
-              <a href="" style="text-decoration: none;"><div class="Pic" style="background-image: url(../PROPERTY/Agent-2.jpg);">
+              <a href="" style="text-decoration: none;"><div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/PROPERTY/Agent-2.jpg);">
                 <div class="Plus"><i class='bx bx-plus' style='color:#ffffff' ></i></div>
               </div></a>
               <div class="Name"><a href="#" style="text-decoration: none;color: rgb(19,59,92);font-size: 22px;font-weight: 400;">Naomí Yepes</a></div>
               <div class="Phno"><a href="#" style="text-decoration: none;color: rgb(65,68,75)"><b>+ 123 456 789</b></a></div>
           </div>
           <div class="Cards">
-              <a href="" style="text-decoration: none;"><div class="Pic" style="background-image: url(../PROPERTY/Agent-3.jpg);">
+              <a href="" style="text-decoration: none;"><div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/PROPERTY/Agent-3.jpg);">
                 <div class="Plus"><i class='bx bx-plus' style='color:#ffffff' ></i></div>
               </div></a>
               <div class="Name"><a href="#" style="text-decoration: none;color: rgb(19,59,92);font-size: 22px;font-weight: 400;">Kay Totleben</a></div>
               <div class="Phno"><a href="#" style="text-decoration: none;color: rgb(65,68,75)"><b>+ 123 456 789</b></a></div>
           </div>
           <div class="Cards">
-              <a href="" style="text-decoration: none;"><div class="Pic" style="background-image: url(../PROPERTY/Agent-4.jpg);">
+              <a href="" style="text-decoration: none;"><div class="Pic" style="background-image: url(<?php  bloginfo('template_directory'); ?>/PROPERTY/Agent-4.jpg);">
                 <div class="Plus"><i class='bx bx-plus' style='color:#ffffff' ></i></div>
               </div></a>
               <div class="Name"><a href="#" style="text-decoration: none;color: rgb(19,59,92);font-size: 22px;font-weight: 400;">Lacara Jones</a></div>
@@ -305,51 +218,7 @@
       </section>
     </div>
 
-    <!-- Footer -->
-    <div class="Footer">
-      <section>
-        <div class="FooterHeader">
-          <div class="Heading-1">A special and qualified service dedicated to luxury properties for rent</div>
-          <div class="Heading-2"><a href="#" style="text-decoration: none;color: #133b5c;">dexico<span style="color: #3C6E71;">.</span></a></div>
-        </div>
-        <div class="FooterContent">
-          <div class="F-Content">
-            <ul>
-              <li><a href="#">– Propertys</a></li>
-              <li><a href="#">– Agents</a></li>
-              <li><a href="#">– Locations</a></li>
-              <li><a href="#">– Clients Support</a></li>
-            </ul>
-          </div>
-          <div class="F-Content">
-            <ul>
-              <li><a href="#">– Home</a></li>
-              <li><a href="#">– About</a></li>
-              <li><a href="#">– Blog</a></li>
-              <li><a href="#">– Contacts</a></li>
-            </ul>
-          </div>
-          <div class="F-Content">
-            <div class="Box-1">
-              <ul>
-                <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 58</a></li>
-                <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-phone' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>+91 1234567890</a></li>
-                <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-envelope' style="color: hsl(191, 77%, 12%);margin-right: 20px; font-size: 25px;"></i>hello@merkulov.design</a></li>
-              </ul>
-            </div>
-            <div class="Box-2" style="display: flex;align-items: center;">
-              <a href="#"><i class='bx bxl-twitter' style="color: #3C6E71;margin-right: 10px;font-size: 35px;"></i></a>
-              <a href="#"><i class='bx bxl-facebook' style="color: #3C6E71;margin-right: 10px;font-size: 35px;"></i></a>
-              <a href="#"><i class='bx bxl-instagram' style="color: #3C6E71;font-size: 35px;"></i></a>  
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="FooterCredits">
-          <b>Merkulove © Dexico Template All rights reserved Copyrights 2020</b>
-        </div>
-      </section>
-    </div>
+    <?php get_footer() ?>
 
     <!-- Bootstrap JavaScript files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

@@ -2,6 +2,7 @@
 <?php 
   // echo get_template_directory_uri();
   // bloginfo('template_directory');
+  /* Template Name: Home */
   get_header();
 ?>
 
