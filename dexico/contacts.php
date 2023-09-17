@@ -16,7 +16,7 @@
     <!-- Element-2 -->
     <div class="Element-2">
         <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2483.5466697522556!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1692185160765!5m2!1sen!2sus" width="1003.91" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="<?php the_field('map_link',33);?>" width="1003.91" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </div>
 
@@ -47,15 +47,15 @@
                 <div class="F-Content">
                 <div class="Box-1">
                 <ul>
-                    <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 25px; font-size: 25px;"></i>LA, Vehiclua Street, 58</a></li>
-                    <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-phone' style="color: #3C6E71;margin-right: 25px; font-size: 25px;"></i>+91 1234567890</a></li>
-                    <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-envelope' style="color: #3C6E71;margin-right: 25px; font-size: 25px;"></i>hello@merkulov.design</a></li>
+                    <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 25px; font-size: 25px;"></i><?php the_field('address',33);?></a></li>
+                    <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-phone' style="color: #3C6E71;margin-right: 25px; font-size: 25px;"></i><?php the_field('phone_number',33);?></a></li>
+                    <li><a href="#" style="display: flex;align-items: center;"><i class='bx bxs-envelope' style="color: #3C6E71;margin-right: 25px; font-size: 25px;"></i><?php the_field('e-mail',33);?></a></li>
                 </ul>
                 </div>
                 <div class="Box-2" style="display: flex;align-items: center;">
-                <a href="#"><i class='bx bxl-twitter' style="color: #3C6E71;margin-right: 15px;font-size: 35px;"></i></a>
-                <a href="#"><i class='bx bxl-facebook' style="color: #3C6E71;margin-right: 15px;font-size: 35px;"></i></a>
-                <a href="#"><i class='bx bxl-instagram' style="color: #3C6E71;font-size: 35px;"></i></a>  
+                <a href="<?php the_field('twitter_link',33);?>"><i class='bx bxl-twitter' style="color: #3C6E71;margin-right: 15px;font-size: 35px;"></i></a>
+                <a href="<?php the_field('facebook_link',33);?>"><i class='bx bxl-facebook' style="color: #3C6E71;margin-right: 15px;font-size: 35px;"></i></a>
+                <a href="<?php the_field('instagram_link',33);?>"><i class='bx bxl-instagram' style="color: #3C6E71;font-size: 35px;"></i></a>  
                 </div>
                 </div>
             </div>

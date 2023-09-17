@@ -1,3 +1,5 @@
+<?php // Template Name: Header ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,19 +82,19 @@
                 <div class="InsideCanvas" style="color: #133b5c;">
                   <h1 style="font-family: 'Gothic A1', Sans-serif;font-size: 47px;font-weight: 543;line-height: 1.3em;">Let's be Together</h1>
                   <div class="gmap" style="width: 480px;height: 340px; margin-bottom: 40px; margin-top: 30px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317893.9737282887!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1691729805369!5m2!1sen!2sus" width="478" height="338" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="<?php the_field('map_link',93);?>" width="478" height="338" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                   <div class="ContactsDetails">
-                    <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-map' style="margin-right:10px;font-size: 30px;margin-top: 5px;color: #3C6E71;"></i>LA, Vehiclua Street, 58</a></h6>
-                    <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-phone' style="margin-right:10px;font-size: 30px;margin-bottom: 5px;color: #3C6E71;"></i>+91 1234567890</a></h6>
-                    <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-envelope' style="margin-right:10px;font-size: 30px;margin-bottom: 5px;color: hsl(191, 77%, 12%);"></i>hello@merkulov.design</a></h6>
+                    <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-map' style="margin-right:10px;font-size: 30px;margin-top: 5px;color: #3C6E71;"></i><?php the_field('address',93);?></a></h6>
+                    <h6><a href="#" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-phone' style="margin-right:10px;font-size: 30px;margin-bottom: 5px;color: #3C6E71;"></i><?php the_field('phone_number',93);?></a></h6>
+                    <h6><a href="mailto:<?php the_field('e-mail',93);?>" style="text-decoration: none;color: #3C6E71; display: flex; justify-content: center;align-items: center;"><i class='bx bxs-envelope' style="margin-right:10px;font-size: 30px;margin-bottom: 5px;color: hsl(191, 77%, 12%);"></i><?php the_field('e-mail',93);?></a></h6>
                   </div>
                   <br>
                   <br>
                   <div class="SocialMedia" style="width: 230px;height: 40px;font-size: 35px;">
-                    <a href=""><i class='bx bxl-twitter' style="color: #3C6E71;margin-right: 5px;"></i></a>
-                    <a href=""><i class='bx bxl-facebook' style="color: #3C6E71;margin-right: 5px;"></i></a>
-                    <a href=""><i class='bx bxl-instagram' style="color: #3C6E71;"></i></a>  
+                    <a href="<?php the_field('twitter_link',93);?>"><i class='bx bxl-twitter' style="color: #3C6E71;margin-right: 5px;"></i></a>
+                    <a href="<?php the_field('facebook_link',93);?>"><i class='bx bxl-facebook' style="color: #3C6E71;margin-right: 5px;"></i></a>
+                    <a href="<?php the_field('instagram_link',93);?>"><i class='bx bxl-instagram' style="color: #3C6E71;"></i></a>  
                   </div>
                 </div>
               </div>
