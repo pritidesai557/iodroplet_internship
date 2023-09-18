@@ -240,26 +240,26 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" align="center">
-                <div class="d-block Special">Home building’s 2020 sling-shot trajectory—coming as it did amidst the shock and stress of the pandemic—defied gravity. It’s one of American business and society’s few feel-good stories in a bleak, topsy-turvy backdrop.</div>
+                <div class="d-block Special"><?php the_field('feedback_field1');?></div>
                 <div class="carousel-caption d-none d-md-block">
                   <div class="SlideImage" style="background-image: url(<?php bloginfo('template_directory') ?>/Kanye.jpg);"></div>
-                  <h5>KANYE WEST</h5>
+                  <h5><?php the_field('name1');?></h5>
                   <p>happy client</p>
                 </div>
               </div>
               <div class="carousel-item" align="center">
-                <div class="d-block Special">Looking for Hamptons pool days? How about a home right by the beach? No matter what you’re looking for, you’ll find it on Out East — a beautiful new way to find a home in the Hamptons.</div>
+                <div class="d-block Special"><?php the_field('feedback_field2');?></div>
                 <div class="carousel-caption d-none d-md-block">
                   <div class="SlideImage" style="background-image: url(<?php bloginfo('template_directory') ?>/Ana.jpg);"></div>
-                  <h5>ANNA KEY</h5>
+                  <h5><?php the_field('name2');?></h5>
                   <p>happy client</p>
                 </div>
               </div>
               <div class="carousel-item" align="center">
-                <div class="d-block Special">An upside, still-widening consensus hypothesis of a housing-led broad economic recovery has taken meaningful hold of sentiment in the buyer-seller arena where it matters most—money for land.</div>                
+                <div class="d-block Special"><?php the_field('feedback_field3');?></div>                
                 <div class="carousel-caption d-none d-md-block">
                   <div class="SlideImage" style="background-image: url(<?php bloginfo('template_directory') ?>/Lionel.jpg);"></div>
-                  <h5>Lionel Messi</h5>
+                  <h5><?php the_field('name3');?></h5>
                   <p>happy client</p>
                 </div>
               </div>
