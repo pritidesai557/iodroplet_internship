@@ -11,10 +11,10 @@
       <section style="margin-bottom: 120px;">
         <div class="Content">
           <div class="TransitionElements">
-            <div class="ApartmentText" id="ani"><p>Apartments</p><p>For Life</p></div>
+            <div class="ApartmentText" id="ani"><p><?php the_field('main_text_above');?></p><p><?php the_field('main_text_below');?></p></div>
             <div class="ApartmentTextContent">
-              <p>In the heart of Brooklyn, in a vibrant neighborhood just east of Prospect Park,</p>
-              <p>stands an eight-story, full-service, strikingly beautiful apartment building</p>
+              <p><?php the_field('main_description1');?></p>
+              <p><?php the_field('main_description2');?></p>
             </div>
           </div>
           <div class="Search">
@@ -40,8 +40,8 @@
     <div class="SecondSegment">
       <div></div>
       <div class="Text">
-        <div class="Heading"><h2><p style="margin-bottom: 0;">Sunny</p>Loft Apartments</h2></div>
-        <div class="TextBody">From the rooftop terrace, down to the first floor gym, every detail of eight floors provides amenities filled with convenience, class</div>
+        <div class="Heading"><h2><p style="margin-bottom: 0;"><?php the_field('left_text');?></h2></div>
+        <div class="TextBody"><?php the_field('left_description');?></div>
         <div class="ViewButton">
           <button class="btn btn-primary" type="button">− View</button>
         </div>  
@@ -49,32 +49,32 @@
       <div class="HoverBackground-1">
         <div class="Pics">
           <div class="City">
-            <div class="Name">Brooklyn</div>
-            <div class="Propertys">456 Propertys</div>
+            <div class="Name"><?php the_field('city_text1');?></div>
+            <div class="Propertys"><?php the_field('city_property_number1');?></div>
           </div>
         </div>
       </div>
       <div class="HoverBackground-2">
         <div class="Pics" >
           <div class="City">
-            <div class="Name">Manhatten</div>
-            <div class="Propertys">137 Propertys</div>
+            <div class="Name"><?php the_field('city_text2');?></div>
+            <div class="Propertys"><?php the_field('city_property_number2');?></div>
           </div>
         </div>
       </div>
       <div class="HoverBackground-3">
         <div class="Pics">
           <div class="City">
-            <div class="Name">Bronx</div>
-            <div class="Propertys">89 Propertys</div>
+            <div class="Name"><?php the_field('city_text3');?></div>
+            <div class="Propertys"><?php the_field('city_property_number3');?></div>
           </div>
         </div>
       </div>
       <div class="HoverBackground-4">
         <div class="Pics">
           <div class="City">
-            <div class="Name">Queens</div>
-            <div class="Propertys">249 Propertys</div>
+            <div class="Name"><?php the_field('city_text4');?></div>
+            <div class="Propertys"><?php the_field('city_property_number4');?></div>
           </div>
         </div>
       </div>
@@ -89,18 +89,18 @@
             <div class="PropertyContainer">
               <div class="PropertyImage" style="background-image:url(<?php bloginfo('template_directory') ?>/Room1.jpg) ;"></div>
             </div>
-            <div class="Price">$765</div>
+            <div class="Price">$<?php the_field('price');?></div>
             <div class="AddressLinks">
-              <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i>LA, Vehiclua Street, 58</a>
+              <a href="#"><i class='bx bxs-map' style="color: #3C6E71;margin-right: 20px; font-size: 25px;"></i><?php the_field('street');?></a>
             </div>
             <a class="PropertyName">
-              <h2>Sunny Loft</h2>
+              <h2><?php the_field('place');?></h2>
             </a>
             <div class="PropertyFooter">
               <ul>
-                <li>2 Rooms</li>
-                <li><i class='bx bxs-bed'></i> 2 Beds</li>
-                <li><i class='bx bx-area'></i> Area 80 Ft²</li>
+                <li><?php the_field('info1');?> Rooms</li>
+                <li><i class='bx bxs-bed'></i> <?php the_field('info2');?> Beds</li>
+                <li><i class='bx bx-area'></i> Area <?php the_field('info3');?>Ft²</li>
               </ul>
             </div>
           </div>
