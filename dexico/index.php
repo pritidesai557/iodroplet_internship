@@ -99,7 +99,7 @@
             <div class="PropertyFooter">
               <ul>
                 <li><?php the_field('info1');?> Rooms</li>
-                <li><i class='bx bxs-bed'></i> <?php the_field('info2');?> Beds</li>
+                <li><i class='bx bxs-bed'></i> <?php the_field('info2');?> Beds </li>
                 <li><i class='bx bx-area'></i> Area <?php the_field('info3');?>Ft²</li>
               </ul>
             </div>
